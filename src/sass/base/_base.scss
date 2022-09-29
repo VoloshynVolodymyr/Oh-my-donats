@@ -1,0 +1,40 @@
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+  }
+  
+  section {
+    min-width: 100%;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  address {
+     font-style: normal;
+   }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  li {
+    list-style-type: none;
+  }

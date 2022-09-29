@@ -1,6 +1,19 @@
-@import './common';
-@import './example';
 
 
+@import './base/base';
+
+@import './components/button';
+@import './components/logo';
+
+
+@import './layout/header';
+@import './layout/aboutus';
+@import './layout/program';
+@import './layout/speakers';
+@import './layout/price';
+@import './layout/reviews';
+@import './layout/registration';
+@import './layout/contact';
+@import './layout/footer';
 
 
