@@ -11,29 +11,35 @@ ul {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-     position: relative;
-     background-color: $background-color;
-  }
-  
-  section {
-    min-width: 100%;
-  }
-  
-  img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-  }
-  
-  address {
-     font-style: normal;
-   }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  li {
-    list-style-type: none;
-  }
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  background-color: $background-color;
+}
+
+section {
+  min-width: 100%;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}

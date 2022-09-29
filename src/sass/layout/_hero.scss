@@ -1,0 +1,60 @@
+.hero {
+  background-image: url('./../images/header-hero/hero-background__mobile.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__title {
+  margin-bottom: 18px;
+
+  text-align: center;
+  font-family: $montserrat;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+
+  color: $text-color;
+}
+
+.hero__subtitle {
+  margin-bottom: 28px;
+
+  font-family: $montserrat;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25em;
+
+  color: $text-color;
+}
+
+.hero__button {
+  margin-bottom: 28px;
+}
+
+.social-media__link {
+  &:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
+.social-media__icon {
+  fill: $text-color;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+  &:active {
+    fill: $accent-color;
+  }
+}
