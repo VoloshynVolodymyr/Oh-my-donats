@@ -1,9 +1,56 @@
-.registration-form{
+.section__title{
+ margin-bottom: 18px;
+
+ text-align: center;
+ font-family: $montserrat;
+ font-weight: 600;
+ font-size: 28px;
+ line-height: 1.2;
+ letter-spacing: -0.03em;
+
+ color: $text-color;
+}
+
+.registration__form{
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
-align-items: center;
 
-// background-image:url(../../images/Registration/registration-mob-min.png);
+
+
+min-height: 394px;
+min-width: 280px;
+margin: 27px 20px 40px;
+
+color: white;
+background-color: #3D2C2C;
+background-image:url(../images/Registration/registration-mob-min.png);
+background-repeat: no-repeat;
+opacity: 0.6;
+
+border-radius: 10px;
+}
+.registration__form:first-child{
+align-self: center;
+}
+
+// transform: rotate(90deg);
+
+
+
+
+.registration__input{
+background: transparent;
+border: none;
+border-bottom: 1px solid white;
+color: white;
+}
+
+::placeholder{
+    color: white;
+}
+
+.conteiner__registration{
+background-color: inherit;
 
 }
