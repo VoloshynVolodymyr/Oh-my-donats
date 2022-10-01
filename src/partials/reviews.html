@@ -1,140 +1,150 @@
-<section id="reviews" class="reviews-section">
-  <div class="container reviews">
-    <h2 class="reviews__title">Reviews</h2>
+<section class="reviews" id="reviews">
+  <div class="container reviews__container">
+    <h2 class="title reviews__title">Reviews</h2>
 
-    <ul class="reviews__list">
-      <li class="reviews__item item-John">
-        <picture class="reviews__images">
-         
-        </picture>
-        <div>
-          <ul class="star__list">
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-          </ul>
-          <p>John</p>
-        </div>
-      </li>
+    <div class="swiper">
+      <div class="swiper__wrapper">
+        <article class="swiper__slide">
+          <picture>
+            <source
+              srcset="
+                ./images/reviews/desktop/desktop-reviews-John.png    1x,
+                ./images/reviews/desktop/desktop-reviews-John@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/reviews/desktop/desktop-reviews-John.png    1x,
+                ./images/reviews/desktop/desktop-reviews-John@2x.png 2x
+              "
+              media="(min-width: 768px) and (max-width: 1279px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/reviews/desktop/desktop-reviews-John.png    1x,
+                ./images/reviews/desktop/desktop-reviews-John@2x.png 2x
+              "
+              media="(max-width: 767px)"
+              type="image/png"
+            />
+            <img
+              class="swiper__image"
+              src="./images/reviews/desktop/desktop-reviews-John.png"
+              alt="John"
+            />
+          </picture>
+          <svg class="swiper__rate" width="136" height="28">
+            <use href="./images/sprite.svg#icon-fourstars"></use>
+          </svg>
+          <p class="swiper__name">John</p>
+          <div class="swiper__comment">
+            <h3 class="visually-hidden">Comment</h3>
+            Last time I have visited a cooking course by Eva I was impressed
+            with the way she explained everything to people. You can be sure you
+            will manage to cook a delicious dish even if it is your first time
+            in the kitchen! Thank you so much for the masterclass! Looking
+            forward to the next one and highly recommend it to everyone!
+          </div>
+        </article>
 
-      <li class="reviews__item item-Will">
-        <picture>
-        </picture>
+        <article class="swiper__slide">
+          <picture>
+            <source
+              srcset="
+                ./images/reviews/desktop/desktop-reviews-Will.png    1x,
+                ./images/reviews/desktop/desktop-reviews-Will@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/reviews/tablet/tablet-reviews-Will.png    1x,
+                ./images/reviews/tablet/tablet-reviews-Will@2x.png 2x
+              "
+              media="(min-width: 768px) and (max-width: 1279px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/reviews/mobile/mobile-reviews-Will.png    1x,
+                ./images/reviews/mobile/mobile-reviews-Will@2x.png 2x
+              "
+              media="(max-width: 767px)"
+              type="image/png"
+            />
+            <img
+              class="swiper__image"
+              src=" ./images/reviews/desktop/desktop-reviews-Will.png "
+              alt="Will"
+            />
+          </picture>
+          <svg class="swiper__rate" width="136" height="28">
+            <use href="./images/sprite.svg#icon-fivestars"></use>
+          </svg>
+          <p class="swiper__name">Will</p>
+          <div class="swiper__comment">
+            <h3 class="visually-hidden">Comment</h3>
+            Last time I have visited a cooking course by Eva I was impressed
+            with the way she explained everything to people. You can be sure you
+            will manage to cook a delicious dish even if it is your first time
+            in the kitchen! Thank you so much for the masterclass! Looking
+            forward to the next one and highly recommend it to everyone!
+          </div>
+        </article>
 
-        <div>
-          <ul class="star__list">
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-          </ul>
-          <p>Will</p>
-        </div>
-      </li>
-
-      <li class="reviews__item item-Elisabeth">
-        <picture>
-        </picture>
-
-        <div>
-        <div>
-          <ul class="star__list">
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-            <li class="star__item">
-              <svg class="star__icon">
-                <use href="#"></use>
-              </svg>
-            </li>
-          </ul>
-          <p>Elisabeth</p>
-        </div>
-      </li>
-    </ul>
-
-    <div class="reviews__descriprtion">
-      <p>
-        Last time I have visited a cooking course by Eva 
-I was impressed with the way she explained everything
-to people. You can be sure you will manage to cook a delicious dish even if it is your first time in the kitchen!
-Thank you so much for the masterclass! Looking forward to the next one and highly recommend it to everyone!
-      </p>
-
-       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque
-        dolores molestias ut asperiores voluptatum iusto deleniti adipisci.
-        Voluptatum deserunt amet optio id accusamus ipsa corporis, at maxime
-        velit odio.
-      </p>
-
-       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab doloremque
-        dolores molestias ut asperiores voluptatum iusto deleniti adipisci.
-        Voluptatum deserunt amet optio id accusamus ipsa corporis, at maxime
-        velit odio.
-      </p>
-      
+        <article class="swiper__slide">
+          <picture>
+            <source
+              srcset="
+                ./images/reviews/desktop/desktop-reviews-Elisabeth.png    1x,
+                ./images/reviews/desktop/desktop-reviews-Elisabeth@2x.png 2x
+              "
+              media="(min-width: 1280px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/reviews/desktop/desktop-reviews-Elisabeth.png    1x,
+                ./images/reviews/desktop/desktop-reviews-Elisabeth@2x.png 2x
+              "
+              media="(min-width: 768px) and (max-width: 1279px)"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./images/reviews/desktop/desktop-reviews-Elisabeth.png    1x,
+                ./images/reviews/desktop/desktop-reviews-Elisabeth@2x.png 2x
+              "
+              media="(max-width: 767px)"
+              type="image/png"
+            />
+            <img
+              class="swiper__image"
+              src="./images/reviews/desktop/desktop-reviews-Elisabeth.png"
+              alt="Elisabeth"
+            />
+          </picture>
+          <svg class="swiper__rate" width="136" height="28">
+            <use href="./images/sprite.svg#icon-fivestars"></use>
+          </svg>
+          <p class="swiper__name">Elisabeth</p>
+          <div class="swiper__comment">
+            <h3 class="visually-hidden">Comment</h3>
+            Last time I have visited a cooking course by Eva I was impressed
+            with the way she explained everything to people. You can be sure you
+            will manage to cook a delicious dish even if it is your first time
+            in the kitchen! Thank you so much for the masterclass! Looking
+            forward to the next one and highly recommend it to everyone!
+          </div>
+        </article>
+      </div>
+      <!-- <div class="swiper-button-next button"></div>
+      <div class="swiper-button-prev button"></div> -->
+      <div class="swiper__pagination"></div>
     </div>
-  </div>  
+  </div>
 </section>

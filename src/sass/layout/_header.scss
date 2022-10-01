@@ -11,8 +11,67 @@
   justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 36px;
+    padding-bottom: 36px;
+  }
+}
+
+.logo-company__icon {
+  @media screen and (min-width: 1280px) {
+    width: 158px;
+    height: 70px;
+    margin-right: 55px;
+  }
+}
+
+.js-open-menu {
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 }
 
 .header__icon-burger {
   cursor: pointer;
+}
+
+.site-nav__list {
+  display: none;
+  align-items: center;
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+}
+
+.site-nav__item {
+  cursor: pointer;
+  transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:not(:first-child) {
+    margin-left: 12px;
+  }
+}
+
+.site-nav__link {
+  padding: 4px 8px;
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.375;
+  color: $text-color;
+  &:hover,
+  &:focus {
+    background: linear-gradient(
+      180deg,
+      rgba(248, 110, 103, 0.63) 0%,
+      rgba(253, 86, 143, 0.86) 100%
+    );
+    box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
+    color: #fff;
+  }
 }
