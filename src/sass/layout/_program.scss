@@ -1,0 +1,29 @@
+.program__container {
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
+}
+
+.program__box {
+  @media screen and (min-width: 1280px) {
+    width: 418px;
+  }
+}
+
+.program__item::before {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(../images/price/paragraph-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 15px;
+  }
+}
