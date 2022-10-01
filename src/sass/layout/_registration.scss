@@ -1,37 +1,109 @@
-.section__title{
- margin-bottom: 18px;
+.section__title {
+    margin-bottom: 18px;
 
- text-align: center;
- font-family: $montserrat;
- font-weight: 600;
- font-size: 28px;
- line-height: 1.2;
- letter-spacing: -0.03em;
+    text-align: center;
+    font-family: $montserrat;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
 
- color: $text-color;
+    color: $text-color;
 }
 
-.registration__form{
-display: flex;
-flex-direction: column;
-justify-content: space-evenly;
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
 
 
-min-height: 394px;
-min-width: 280px;
-margin: 27px 20px 40px;
+    min-height: 394px;
+    min-width: 280px;
+    margin: 27px 20px 40px;
 
-color: white;
-background-color: #3D2C2C;
-background-image:url(../images/Registration/registration-mob-min.png);
-background-repeat: no-repeat;
-opacity: 0.6;
+    color: white;
+    background-image:linear-gradient(to right,
+            rgba(61, 44, 44, 0.6) 100%,
+            rgba(61, 44, 44, 0.6) 100%), url(../images/Registration/registration-mob-min.png);
 
-border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // opacity: 0.6;
+
+    border-radius: 10px;
+    position: relative;
+
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0, 0.25);
+
+@media screen and (max-width: 767px){
+   
+                   
+    }
+
+    &:first-child::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: -10px;
+            width: 1px;
+            height: 22px;
+            background-color:currentColor;
+        }
+    
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image:
+            url(../images/Registration/registration-mob@2x-min.png);
+
+    }
+
+    @media screen and (min-width: 768px) {
+        align-items: center;
+
+        background-color: #F6F7F7;
+        background-image: url(../images/Registration/registration-tablet-min.png);
+        background-size: cover;
+        opacity: 1;
+
+        height: 246px;
+
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image:
+                url(../images/Registration/registration-tablet@2x-min.png);
+
+        }
+
+    }
+
+    @media screen and (min-width: 1200px) {
+        align-items: center;
+
+        background-color: #F6F7F7;
+        background-image: url(../images/Registration/registration-desktop-min.png);
+        background-size: cover;
+        opacity: 1;
+
+        height: 246px;
+
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image:
+                url(../images/Registration/registration-desktop@2x-min.png);
+
+        }
+    }
 }
-.registration__form:first-child{
-align-self: center;
+
+.registration__form:first-child {
+    align-self: center;
 }
 
 // transform: rotate(90deg);
@@ -39,18 +111,19 @@ align-self: center;
 
 
 
-.registration__input{
-background: transparent;
-border: none;
-border-bottom: 1px solid white;
-color: white;
+.registration__input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    z-index: 10;
 }
 
-::placeholder{
+::placeholder {
     color: white;
 }
 
-.conteiner__registration{
-background-color: inherit;
-
+.conteiner__registration {
+    background-color: inherit;
+border-radius: 10px;
 }
