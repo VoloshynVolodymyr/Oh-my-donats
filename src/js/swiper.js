@@ -6,14 +6,30 @@ var swiper = new Swiper('.swiper', {
     el: '.swiper__pagination',
     // Пагінація типу фракції ([поточний слайд/загальна кіль-ть] в цифрах)
     type: 'fraction',
+    
+  },
+
+  // navigation: {
+  //   nextEl: '.swiper-button-next',
+  //   prevEl: '.swiper-button-prev'  
+
+  // },
+  
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+
   },
 
   autoplay: {
     delay: 3000,
   },
 
-  // Заборонити свайпи
-  allowTouchMove: false,
+  // LДозволити свайпи
+  allowTouchMove: true,
+  touchRatio: 1,
+  grabCursor: true,
 
   // Відступ між слайдами
   spaceBetween: 32,
@@ -28,10 +44,12 @@ var swiper = new Swiper('.swiper', {
   loop: true,
 
   // Встановлюємо швидкість перелистування слайдів
-  speed: 500,
+  speed: 400,
 
   effect: 'slide',
+ 
 
+  
   breakpoints: {
     320: {
       // Кіль-то слайдів для показу
