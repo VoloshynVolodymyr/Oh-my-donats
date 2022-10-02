@@ -17,6 +17,16 @@
     color: $text-color;
 }
 
+.registration-text{
+font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
 .registration__form {
     display: flex;
     flex-direction: column;
@@ -68,12 +78,12 @@
 
     @media screen and (min-width: 768px) {
 
-       
+       margin-bottom: 126px;
 
         align-items: center;
 
         background-color: #F6F7F7;
-        background-image: url(../images/Registration/registration-tablet-min.png);
+        background-image:url(../images/Registration/Rectangle13-min.png), url(../images/Registration/registration-tablet-min.png);
         background-size: cover;
         opacity: 1;
 
