@@ -920,7 +920,7 @@ li {
   background-repeat: no-repeat;
   background-position: center 74%;
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .price__items:not(:first-child) {
     background-image: url(../images/price/bgc-mob@2x-min.png);
   }
@@ -936,7 +936,7 @@ li {
     background-size: 200px 145px;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .price__items {
     background-image: url(../images/price/bgc-tab@2x-min.png);
   }
@@ -952,7 +952,7 @@ li {
     background-position: center 74%;
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .price__items {
     background-image: url(../images/price/bgc-desk@2x-min.png);
   }
@@ -1057,22 +1057,6 @@ li {
   position: absolute;
 }
 
-@media screen and (min-width: 320px) {
-  .reviews {
-    background-image: url("../images/mobile-background.png");
-  }
-}
-@media screen and (min-width: 768px) {
-  .reviews {
-    background-image: url("../images/tablet-background.png");
-  }
-}
-@media screen and (min-width: 1280px) {
-  .reviews {
-    background-image: url("../images/background.png");
-  }
-}
-
 @media screen and (min-width: 1280px) {
   .reviews__container {
     width: 1033px;
@@ -1159,7 +1143,8 @@ li {
 .swiper__image {
   margin-bottom: 8px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .swiper__image {
@@ -1239,134 +1224,9 @@ li {
   }
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-  width: 50px;
-  height: 50px;
-}
-
-.top-image {
-  width: 150px;
-  height: 150px;
-}
-
-.bottom-top {
-  position: fixed;
-  z-index: 999;
-  bottom: 70px;
-  right: 15px;
-  cursor: pointer;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 1;
-}
-
-.bottom-top_hide {
-  display: none;
-  opacity: 0;
-}
-
-.bottom-top_hiding {
-  opacity: 0;
-}
-
-.text-top {
-  font-size: 25px;
-  color: #f3848c;
-  font-weight: 800;
-}
-.text-top:hover, .text-top:focus {
-  color: yellow;
-}
-
-.section__title {
-  margin-bottom: 18px;
-  text-align: center;
-  font-family: "Montserrat Alternates", sans-serif;
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 1.2;
-  letter-spacing: -0.03em;
-  color: #3c322d;
-}
-
-.registration__form {
+.registration-form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  min-height: 394px;
-  min-width: 280px;
-  margin: 27px 20px 40px;
-  color: white;
-  background-image: linear-gradient(to right, rgba(61, 44, 44, 0.6) 100%, rgba(61, 44, 44, 0.6) 100%), url(../images/Registration/registration-mob-min.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 10px;
-  position: relative;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.registration__form:first-child::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 1px;
-  height: 22px;
-  background-color: currentColor;
-}
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
-  .registration__form {
-    background-image: url(../images/Registration/registration-mob@2x-min.png);
-  }
-}
-@media screen and (min-width: 768px) {
-  .registration__form {
-    align-items: center;
-    background-color: #F6F7F7;
-    background-image: url(../images/Registration/registration-tablet-min.png);
-    background-size: cover;
-    opacity: 1;
-    height: 246px;
-  }
-}
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .registration__form {
-    background-image: url(../images/Registration/registration-tablet@2x-min.png);
-  }
-}
-@media screen and (min-width: 1200px) {
-  .registration__form {
-    align-items: center;
-    background-color: #F6F7F7;
-    background-image: url(../images/Registration/registration-desktop-min.png);
-    background-size: cover;
-    opacity: 1;
-    height: 246px;
-  }
-}
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .registration__form {
-    background-image: url(../images/Registration/registration-desktop@2x-min.png);
-  }
-}
-
-.registration__form:first-child {
-  align-self: center;
-}
-
-.registration__input {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid white;
-  color: white;
-  z-index: 10;
-}
-
-::placeholder {
-  color: white;
-}
-
-.conteiner__registration {
-  background-color: inherit;
-  border-radius: 10px;
+  align-items: center;
 }/*# sourceMappingURL=index.css.map */
