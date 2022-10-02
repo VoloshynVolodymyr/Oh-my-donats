@@ -1,66 +1,233 @@
-<section class="program">
+<section id="program" class="program">
   <div class="program__container container">
-    <h2 class="program__title">Program</h2>
+    <div class="program__box">
+      <h2 class="program__title">Program</h2>
 
-    <p>
-      Indulge in this immersive sweet treat experience with The Chef Donut Queen
-      in her New York donut shop!
-    </p>
+      <p class="program__text">
+        Indulge in this immersive sweet treat experience with The Chef Donut
+        Queen in her New York donut shop!
+      </p>
 
-    <ul class="program__list-icon">
-      <li class="program__item-icon">
-        <svg><use></use></svg>
-        <span>A stand up history of donuts</span>
-      </li>
-      <li class="program__item">
-        <svg><use></use></svg>
-        <span>Make 3 donut flavors of your choice</span>
-      </li>
-      <li class="program__item">
-        <svg><use></use></svg>
-        <span>Enjoy all-you-can-eat donuts</span>
-      </li>
-      <li class="program__item">
-        <svg><use></use></svg>
-        <span>Cocktail pairings and coffee included</span>
-      </li>
-      <li class="program__item">
-        <svg><use></use></svg>
-        <span>Photoshoot by professional photographer</span>
-      </li>
-      <li class="program__item">
-        <svg><use></use></svg>
-        <span>Secret receipt of cooking from Eva</span>
-      </li>
-      <li class="program__item">
-        <svg><use></use></svg>
-        <span>All products are included in the price</span>
-      </li>
-    </ul>
-    <p>
-      Come with your dear people and friends and you will spend an unforgettable
-      time and will become a real professional in donuts cooking!
-    </p>
+      <ul class="program__list">
+        <li class="program__item">
+          <span>A stand up history of donuts</span>
+        </li>
+        <li class="program__item">
+          <span>Make 3 donut flavors of your choice</span>
+        </li>
+        <li class="program__item">
+          <span>Enjoy all-you-can-eat donuts</span>
+        </li>
+        <li class="program__item">
+          <span>Cocktail pairings and coffee included</span>
+        </li>
+        <li class="program__item">
+          <span>Photoshoot by professional photographer</span>
+        </li>
+        <li class="program__item">
+          <span>Secret receipt of cooking from Eva</span>
+        </li>
+        <li class="program__item">
+          <span>All products are included in the price</span>
+        </li>
+      </ul>
+      <p
+        class="aboutus__text program__text--hidden js-hidden-paragraph-program visually-hidden hidden"
+      >
+        Come with your dear people and friends and you will spend an
+        unforgettable time and will become a real professional in donuts
+        cooking!
+      </p>
 
-    <button><span>Read more</span></button>
+      <button class="program__button js-btn-paragraph-program-open">
+        Read more
+      </button>
+      <button
+        class="program__button js-btn-paragraph-program-close visually-hidden"
+      >
+        <!-- js-btn-paragraph-open -->
+        <span>Less</span>
+      </button>
+    </div>
 
-    <ul>
-      <li>
-        <img src="#" alt="" />
-        <p>Type of the event</p>
-      </li>
-      <li>
-        <img src="#" alt="" />
-        <p>Time of the event</p>
-      </li>
-      <li>
-        <img src="#" alt="" />
-        <p>Number of guests</p>
-      </li>
-      <li>
-        <img src="#" alt="" />
-        <p>The host speaks</p>
-      </li>
-    </ul>
+    <div class="program__wrap-cont">
+      <div class="program__wrap-s program__wrap-s-l">
+        <div class="program__wrapper program__wrapper-t">
+          <picture>
+            <source
+              srcset="
+                ./images/program/prog1-288.png 1x,
+                ./images/program/prog1-576.png 2x
+              "
+              media="(min-width: 1280px)"
+              width="288px"
+            />
+            <source
+              srcset="
+                ./images/program/prog1-152.png 1x,
+                ./images/program/prog1-304.png 2x
+              "
+              media="(min-width: 768px)"
+              width="152px"
+            />
+            <source
+              srcset="
+                ./images/program/prog1-130.png 1x,
+                ./images/program/prog1-260.png 2x
+              "
+              width="130px"
+            />
+            <img
+              class="program__img"
+              src="./images/program/prog1-260.png"
+              alt="delicious donuts"
+              width="260px"
+            />
+          </picture>
+          <div class="program__overlay">
+            <p class="program__event-title">Type of the event</p>
+            <p class="program__event-descr">Cooking classes</p>
+          </div>
+        </div>
+
+        <div class="program__wrapper program__wrapper-b">
+          <picture>
+            <source
+              srcset="
+                ./images/program/prog2-288.png 1x,
+                ./images/program/prog2-576.png 2x
+              "
+              media="(min-width: 1280px)"
+              width="288px"
+            />
+            <source
+              srcset="
+                ./images/program/prog2-152.png 1x,
+                ./images/program/prog2-304.png 2x
+              "
+              media="(min-width: 768px)"
+              width="152px"
+            />
+            <source
+              srcset="
+                ./images/program/prog2-130.png 1x,
+                ./images/program/prog2-260.png 2x
+              "
+              width="130px"
+            />
+            <img
+              class="program__img"
+              src="./images/program/prog2-260.png"
+              alt="delicious donuts"
+              width="260px"
+            />
+          </picture>
+          <div class="program__overlay">
+            <p class="program__event-title">Time of the event</p>
+            <p class="program__event-descr">18:30 (2.5 hours)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="program__wrap-s program__wrap-s-r">
+        <div class="program__wrapper program__wrapper-t">
+          <picture>
+            <source
+              srcset="
+                ./images/program/prog3-288.png 1x,
+                ./images/program/prog3-576.png 2x
+              "
+              media="(min-width: 1280px)"
+              width="288px"
+            />
+            <source
+              srcset="
+                ./images/program/prog3-152.png 1x,
+                ./images/program/prog3-304.png 2x
+              "
+              media="(min-width: 768px)"
+              width="152px"
+            />
+            <source
+              srcset="
+                ./images/program/prog3-130.png 1x,
+                ./images/program/prog3-260.png 2x
+              "
+              width="130px"
+            />
+            <img
+              class="program__img"
+              src="./images/program/prog3-260.png"
+              alt="delicious donuts"
+              width="260px"
+            />
+          </picture>
+          <div class="program__overlay">
+            <p class="program__event-title">Number of guests</p>
+            <p class="program__event-descr">1 to 20</p>
+          </div>
+        </div>
+
+        <div class="program__wrapper program__wrapper-b">
+          <picture>
+            <source
+              srcset="
+                ./images/program/prog4-288.png 1x,
+                ./images/program/prog4-576.png 2x
+              "
+              media="(min-width: 1280px)"
+              width="288px"
+            />
+            <source
+              srcset="
+                ./images/program/prog4-152.png 1x,
+                ./images/program/prog4-304.png 2x
+              "
+              media="(min-width: 768px)"
+              width="152px"
+            />
+            <source
+              srcset="
+                ./images/program/prog4-130.png 1x,
+                ./images/program/prog4-260.png 2x
+              "
+              width="130px"
+            />
+            <img
+              class="program__img"
+              src="./images/program/prog4-260.png"
+              alt="delicious donuts"
+              width="260px"
+            />
+          </picture>
+          <div class="program__overlay">
+            <p class="program__event-title">The host speaks</p>
+            <p class="program__event-descr">English, French</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
+<script>
+  (() => {
+    const hiddenParagraph = document.querySelector(
+      '.js-hidden-paragraph-program'
+    );
+    const menuBtnOpen = document.querySelector(
+      '.js-btn-paragraph-program-open'
+    );
+    const menuBtnClose = document.querySelector(
+      '.js-btn-paragraph-program-close'
+    );
+
+    const toggleMenu = () => {
+      hiddenParagraph.classList.toggle('visually-hidden');
+      menuBtnOpen.classList.toggle('visually-hidden');
+      menuBtnClose.classList.toggle('visually-hidden');
+    };
+
+    menuBtnOpen.addEventListener('click', toggleMenu);
+    menuBtnClose.addEventListener('click', toggleMenu);
+  })();
+</script>
