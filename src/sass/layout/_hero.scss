@@ -5,10 +5,12 @@
   background-size: cover;
   height: 312px;
   @media screen and (min-width: 768px) {
+    // background-size: contain;
     background-image: url('./../images/header-hero/hero-background.jpg');
     height: 345px;
   }
   @media screen and (min-width: 1280px) {
+    background-size: contain;
     height: 556px;
   }
 }
