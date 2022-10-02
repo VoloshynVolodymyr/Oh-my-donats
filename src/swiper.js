@@ -29,7 +29,7 @@ var swiper = new Swiper('.swiper', {
   // LДозволити свайпи
   allowTouchMove: true,
   touchRatio: 1,
-  grabCursor: true,
+  // grabCursor: true,
 
   // Відступ між слайдами
   spaceBetween: 32,
