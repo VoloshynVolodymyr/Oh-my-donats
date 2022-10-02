@@ -32,7 +32,10 @@ const btnUp = {
   el: document.querySelector('.bottom-top'),
   scrolling: false,
   show() {
-    if (this.el.classList.contains('bottom-top_hide') && !this.el.classList.contains('btn-up_hiding')) {
+    if (
+      this.el.classList.contains('bottom-top_hide') &&
+      !this.el.classList.contains('btn-up_hiding')
+    ) {
       this.el.classList.remove('bottom-top_hide');
       this.el.classList.add('bottom-top_hiding');
       window.setTimeout(() => {
@@ -41,7 +44,10 @@ const btnUp = {
     }
   },
   hide() {
-    if (!this.el.classList.contains('bottom-top_hide') && !this.el.classList.contains('btn-up_hiding')) {
+    if (
+      !this.el.classList.contains('bottom-top_hide') &&
+      !this.el.classList.contains('btn-up_hiding')
+    ) {
       this.el.classList.add('bottom-top_hiding');
       window.setTimeout(() => {
         this.el.classList.add('bottom-top_hide');
@@ -74,11 +80,10 @@ const btnUp = {
       window.scrollTo({
         top: 0,
         left: 0,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
-    }
-  }
-}
+    };
+  },
+};
 
 btnUp.addEventListener();
-
