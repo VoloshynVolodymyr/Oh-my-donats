@@ -1,3 +1,19 @@
+.reviews {
+  padding-bottom: 100px;
+
+  @media screen and (min-width: 320px) {
+    background-image: url('../images/mobile-background.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url('../images/tablet-background.png');
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/background.png');
+  }
+}
+
 .reviews__container {
   @media screen and (min-width: 1280px) {
     width: 1033px;
@@ -25,6 +41,8 @@
   display: flex;
   width: 100%;
   height: 100%;
+
+  cursor: url('/src/images/donut-mause.png'), pointer;
 }
 
 .swiper__slide {
@@ -103,7 +121,7 @@
   margin-right: auto;
   margin-bottom: 8px;
 
-  cursor: pointer;
+  cursor: url('/src/images/donut-mause.png'), pointer;
   fill: #edd501;
 }
 
@@ -144,7 +162,7 @@
 
   font-size: 14;
   line-height: 1.21;
-  color: #f3848c;
+  color: black;
 
   &::before,
   &::after {
@@ -176,4 +194,38 @@
 .swiper-button-prev {
   width: 50px;
   height: 50px;
+}
+
+.top-image {
+  width: 150px;
+  height: 150px;
+}
+
+.bottom-top {
+  position: fixed;
+  z-index: 999;
+  bottom: 70px;
+  right: 15px;
+  cursor: url('/src/images/donut-mause.png'), pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.bottom-top_hide {
+  display: none;
+  opacity: 0;
+}
+
+.bottom-top_hiding {
+  opacity: 0;
+}
+
+.text-top {
+  font-size: 25px;
+  color: #f3848c;
+  font-weight: 800;
+  &:hover,
+  &:focus {
+    color: yellow;
+  }
 }
