@@ -1283,6 +1283,12 @@ li {
   color: yellow;
 }
 
+@media screen and (min-width: 768px) {
+  .container__registration {
+    height: 312px;
+  }
+}
+
 .section__title {
   margin-bottom: 18px;
   text-align: center;
@@ -1359,12 +1365,28 @@ li {
   align-self: center;
 }
 
+.registration__input:active {
+  outline: none;
+}
+
 .registration__input {
   background: transparent;
   border: none;
   border-bottom: 1px solid white;
   color: white;
   z-index: 10;
+}
+
+.registration__input:valid {
+  border-color: #f3848c;
+}
+
+.registration__input:invalid {
+  border-color: red;
+}
+
+.registration__input:valid {
+  border-color: #f3848c;
 }
 
 ::placeholder {
@@ -1374,4 +1396,57 @@ li {
 .conteiner__registration {
   background-color: inherit;
   border-radius: 10px;
+}
+
+.container__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .container__contact {
+    height: 289px;
+    width: 394px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 268px;
+  background-image: url(../images/Registration/Decor-contacts-mob.svg);
+}
+
+p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.contact-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  z-index: 10;
+  width: 100%;
+}
+
+.social-media__link:not(:last-child) {
+  margin-right: 16px;
+}
+
+.social-media__icon {
+  fill: #3c322d;
+}
+.social-media__icon:hover, .social-media__icon:focus {
+  fill: #f3848c;
+}
+.social-media__icon:active {
+  fill: #f3848c;
 }/*# sourceMappingURL=index.css.map */
