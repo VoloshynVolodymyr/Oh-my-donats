@@ -362,6 +362,408 @@ li {
   fill: #f3848c;
 }
 
+.aboutus {
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+@media screen and (min-width: 768px) {
+  .aboutus {
+    padding-bottom: 29px;
+    padding-top: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .aboutus {
+    padding-bottom: 17px;
+    padding-top: 43px;
+  }
+}
+
+.aboutus__container {
+  display: block;
+  background-image: url("../images/program/circles-bg.png");
+  background-position: center;
+  background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  .aboutus__container {
+    display: flex;
+  }
+}
+
+.aboutus__title {
+  margin-bottom: 8px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: #3c322d;
+}
+@media screen and (min-width: 768px) {
+  .aboutus__title {
+    text-align: left;
+    margin-bottom: 28px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+.aboutus__text {
+  line-height: 1.25;
+}
+.aboutus__text:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .aboutus__text {
+    width: 336px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .aboutus__text {
+    width: 608px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.aboutus__img {
+  display: block;
+  width: 280px;
+  height: 285px;
+}
+@media screen and (max-width: 767px) {
+  .aboutus__img {
+    margin-bottom: 28px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .aboutus__img {
+    width: 336px;
+    height: 359px;
+    margin-right: 31px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .aboutus__img {
+    width: 608px;
+    height: 381px;
+    margin-right: 32px;
+  }
+}
+
+.visually-hidden {
+  display: none;
+}
+@media screen and (min-width: 1280px) {
+  .visually-hidden {
+    display: block;
+  }
+}
+
+.aboutus__button {
+  padding: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media screen and (min-width: 768px) {
+  .aboutus__button {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .aboutus__button {
+    display: none;
+  }
+}
+
+.program {
+  padding-top: 50px;
+}
+
+.program__container {
+  background-image: url("../images/program/circles-bg.png");
+  background-position: center;
+  background-size: contain;
+}
+@media screen and (min-width: 768px) {
+  .program__container {
+    display: flex;
+  }
+}
+@media screen and (min-width: 768px) {
+  .program__box {
+    width: 329px;
+    margin-right: 39px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__box {
+    width: 418px;
+    margin-right: 118px;
+    padding-top: 80px;
+  }
+}
+
+.program__title {
+  margin-bottom: 8px;
+  font-family: "Montserrat Alternates";
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #3c322d;
+}
+@media screen and (min-width: 768px) {
+  .program__title {
+    margin-bottom: 28px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__title {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 39px;
+  }
+}
+
+.program__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #3c322d;
+}
+@media screen and (min-width: 1280px) {
+  .program__text {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.program__text--hidden {
+  margin-bottom: 24px;
+}
+@media screen and (min-width: 1280px) {
+  .program__text--hidden {
+    width: 392px;
+  }
+}
+
+.program__list {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .program__list {
+    margin-top: 12px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.program__item {
+  display: flex;
+  align-items: center;
+}
+.program__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1280px) {
+  .program__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+}
+
+.program__item::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  background-image: url(../images/price/paragraph-icon.svg);
+}
+@media screen and (min-width: 1280px) {
+  .program__item::before {
+    margin-right: 15px;
+  }
+}
+
+.program__wrap-cont {
+  display: flex;
+  justify-content: space-between;
+  height: 309px;
+}
+@media screen and (min-width: 768px) {
+  .program__wrap-cont {
+    width: 337px;
+    height: 403px;
+    padding-top: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__wrap-cont {
+    width: 716px;
+    height: 698px;
+  }
+}
+
+.program__wrap-s {
+  display: flex;
+  flex-direction: column;
+}
+
+.program__wrapper-t {
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 768px) {
+  .program__wrapper-t {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__wrapper-t {
+    margin-bottom: 40px;
+  }
+}
+
+.program__wrap-s-r {
+  justify-content: end;
+}
+@media screen and (min-width: 768px) {
+  .program__wrap-s-r {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__wrap-s-r {
+    justify-content: end;
+  }
+}
+
+.program__wrapper {
+  position: relative;
+}
+
+.program__img {
+  display: block;
+  width: 130px;
+  height: 130px;
+}
+@media screen and (min-width: 768px) {
+  .program__img {
+    width: 152px;
+    height: 152px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__img {
+    width: 288px;
+    height: 288px;
+  }
+}
+
+.program__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 62px;
+  background: linear-gradient(0.1deg, rgba(0, 0, 0, 0.72) -10.83%, rgba(156, 156, 156, 0) 68.01%);
+  border: 1px solid #f3848c;
+  border-radius: 50%;
+  text-align: center;
+  color: #ffffff;
+  width: 130px;
+  height: 130px;
+}
+@media screen and (min-width: 768px) {
+  .program__overlay {
+    width: 152px;
+    height: 152px;
+    padding-top: 79px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__overlay {
+    width: 288px;
+    height: 288px;
+    padding-top: 191px;
+  }
+}
+
+.program__event-title {
+  margin-bottom: 8px;
+  font-family: "Montserrat Alternates";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+@media screen and (min-width: 768px) {
+  .program__event-title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__event-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.program__event-descr {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+@media screen and (min-width: 768px) {
+  .program__event-descr {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__event-descr {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.program__button {
+  padding: 0;
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+@media screen and (min-width: 768px) {
+  .program__button {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program__button {
+    display: none;
+  }
+}
+
 .speakers {
   padding-top: 34px;
 }
@@ -655,6 +1057,22 @@ li {
   position: absolute;
 }
 
+@media screen and (min-width: 320px) {
+  .reviews {
+    background-image: url("../images/mobile-background.png");
+  }
+}
+@media screen and (min-width: 768px) {
+  .reviews {
+    background-image: url("../images/tablet-background.png");
+  }
+}
+@media screen and (min-width: 1280px) {
+  .reviews {
+    background-image: url("../images/background.png");
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .reviews__container {
     width: 1033px;
@@ -821,9 +1239,134 @@ li {
   }
 }
 
-.registration-form {
+.swiper-button-next,
+.swiper-button-prev {
+  width: 50px;
+  height: 50px;
+}
+
+.top-image {
+  width: 150px;
+  height: 150px;
+}
+
+.bottom-top {
+  position: fixed;
+  z-index: 999;
+  bottom: 70px;
+  right: 15px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.bottom-top_hide {
+  display: none;
+  opacity: 0;
+}
+
+.bottom-top_hiding {
+  opacity: 0;
+}
+
+.text-top {
+  font-size: 25px;
+  color: #f3848c;
+  font-weight: 800;
+}
+.text-top:hover, .text-top:focus {
+  color: yellow;
+}
+
+.section__title {
+  margin-bottom: 18px;
+  text-align: center;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #3c322d;
+}
+
+.registration__form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  min-height: 394px;
+  min-width: 280px;
+  margin: 27px 20px 40px;
+  color: white;
+  background-image: linear-gradient(to right, rgba(61, 44, 44, 0.6) 100%, rgba(61, 44, 44, 0.6) 100%), url(../images/Registration/registration-mob-min.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.registration__form:first-child::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 1px;
+  height: 22px;
+  background-color: currentColor;
+}
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .registration__form {
+    background-image: url(../images/Registration/registration-mob@2x-min.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .registration__form {
+    align-items: center;
+    background-color: #F6F7F7;
+    background-image: url(../images/Registration/registration-tablet-min.png);
+    background-size: cover;
+    opacity: 1;
+    height: 246px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .registration__form {
+    background-image: url(../images/Registration/registration-tablet@2x-min.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .registration__form {
+    align-items: center;
+    background-color: #F6F7F7;
+    background-image: url(../images/Registration/registration-desktop-min.png);
+    background-size: cover;
+    opacity: 1;
+    height: 246px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .registration__form {
+    background-image: url(../images/Registration/registration-desktop@2x-min.png);
+  }
+}
+
+.registration__form:first-child {
+  align-self: center;
+}
+
+.registration__input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  z-index: 10;
+}
+
+::placeholder {
+  color: white;
+}
+
+.conteiner__registration {
+  background-color: inherit;
+  border-radius: 10px;
 }/*# sourceMappingURL=index.css.map */
