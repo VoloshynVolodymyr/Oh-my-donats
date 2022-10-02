@@ -1,2 +1,0 @@
-var swiper=new Swiper(".swiper",{slideClass:"swiper__slide",wrapperClass:"swiper__wrapper",pagination:{el:".swiper__pagination",type:"fraction"},keyboard:{enabled:!0,onlyInViewport:!0,pageUpDown:!0},autoplay:{delay:3e3},allowTouchMove:!0,touchRatio:1,grabCursor:!0,spaceBetween:32,initialSlide:1,centeredSlides:!0,loop:!0,speed:400,effect:"slide",breakpoints:{320:{slidesPerView:1},768:{slidesPerView:3}}});
-//# sourceMappingURL=index.1c291b3d.js.map
