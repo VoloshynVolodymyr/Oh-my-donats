@@ -38,9 +38,7 @@
 }
 .aboutus__text {
   line-height: 1.25;
-  &:not(:last-of-type) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
   @media screen and (min-width: 768px) {
     width: 336px;
   }
@@ -71,7 +69,8 @@
 }
 .visually-hidden {
   display: none;
-
+}
+.hidden {
   @media screen and (min-width: 1280px) {
     display: block;
   }

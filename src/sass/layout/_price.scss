@@ -1,10 +1,19 @@
 .price {
   padding-top: 39px;
   padding-bottom: 20px;
+  background-image: url(../images/price/bgc-price-mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
 
   @media screen and (min-width: 768px) {
     padding-top: 75px;
     padding-bottom: 80px;
+
+    background-image: url(../images/price/bgc-price-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
   }
 
   @media screen and (min-width: 1280px) {
@@ -31,7 +40,6 @@
     margin-bottom: 27px;
   }
 }
-
 .price__card {
   display: flex;
   flex-direction: column;
@@ -155,6 +163,8 @@
   color: $paragraph-text-color;
 
   padding-left: 38px;
+
+  text-align: start;
 
   @media screen and (min-width: 768px) {
     font-size: 15px;

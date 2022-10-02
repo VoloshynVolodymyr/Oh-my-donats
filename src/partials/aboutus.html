@@ -1,4 +1,4 @@
-<section class="aboutus">
+<section id="about" class="aboutus">
   <div class="container aboutus__container">
     <picture>
       <source
@@ -45,27 +45,41 @@
         recognition for excellence.
       </p>
 
-      <p class="aboutus__text js-hidden-paragraph visually-hidden">
+      <p class="aboutus__text js-hidden-paragraph visually-hidden hidden">
         We are going to teach you how to cook with passion and sparkles in your
         eyes! We love what we do and believe you will enjoy our cooking
         atmosphere!
       </p>
       <button class="aboutus__button js-btn-paragraph-open">
-        <span> Read more</span>
+        <!-- js-btn-paragraph-open -->
+        <span>Read more</span>
+      </button>
+      <button class="aboutus__button js-btn-paragraph-close visually-hidden">
+        <!-- js-btn-paragraph-open -->
+        <span>Less</span>
       </button>
     </div>
   </div>
 </section>
+<!-- <script src="https://code.jquery.com/jquery-2.1.0.js"></script> -->
+
 <script>
   (() => {
     const hiddenParagraph = document.querySelector('.js-hidden-paragraph');
     const menuBtnOpen = document.querySelector('.js-btn-paragraph-open');
+    const menuBtnClose = document.querySelector('.js-btn-paragraph-close');
 
     const toggleMenu = () => {
       hiddenParagraph.classList.toggle('visually-hidden');
       menuBtnOpen.classList.toggle('visually-hidden');
+      menuBtnClose.classList.toggle('visually-hidden');
     };
 
     menuBtnOpen.addEventListener('click', toggleMenu);
+    menuBtnClose.addEventListener('click', toggleMenu);
   })();
+  // $('.js-hidden-paragraph').hide();
+  // $('.aboutus__button').click(() => {
+  //   $('.js-hidden-paragraph').slideToggle();
+  // });
 </script>

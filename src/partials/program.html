@@ -1,4 +1,4 @@
-<section class="program">
+<section id="program" class="program">
   <div class="program__container container">
     <div class="program__box">
       <h2 class="program__title">Program</h2>
@@ -32,7 +32,7 @@
         </li>
       </ul>
       <p
-        class="program__text program__text--hidden js-hidden-paragraph-program visually-hidden"
+        class="aboutus__text program__text--hidden js-hidden-paragraph-program visually-hidden hidden"
       >
         Come with your dear people and friends and you will spend an
         unforgettable time and will become a real professional in donuts
@@ -41,6 +41,12 @@
 
       <button class="program__button js-btn-paragraph-program-open">
         Read more
+      </button>
+      <button
+        class="program__button js-btn-paragraph-program-close visually-hidden"
+      >
+        <!-- js-btn-paragraph-open -->
+        <span>Less</span>
       </button>
     </div>
 
@@ -211,12 +217,17 @@
     const menuBtnOpen = document.querySelector(
       '.js-btn-paragraph-program-open'
     );
+    const menuBtnClose = document.querySelector(
+      '.js-btn-paragraph-program-close'
+    );
 
     const toggleMenu = () => {
       hiddenParagraph.classList.toggle('visually-hidden');
       menuBtnOpen.classList.toggle('visually-hidden');
+      menuBtnClose.classList.toggle('visually-hidden');
     };
 
     menuBtnOpen.addEventListener('click', toggleMenu);
+    menuBtnClose.addEventListener('click', toggleMenu);
   })();
 </script>
