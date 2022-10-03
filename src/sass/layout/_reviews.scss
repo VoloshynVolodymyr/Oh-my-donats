@@ -124,6 +124,7 @@
 
   cursor: url('/src/images/donut-mause.png'), pointer;
   fill: #edd501;
+  scroll-behavior: smooth;
 }
 
 .swiper__name {
@@ -220,6 +221,7 @@
   cursor: url('/src/images/donut-mause.png'), pointer;
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
+  scroll-behavior: smooth;
 }
 
 .bottom-top_hide {
