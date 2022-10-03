@@ -1,24 +1,15 @@
 .price {
-  padding-top: 39px;
+  padding-top: 20px;
   padding-bottom: 20px;
-  background-image: url(../images/price/bgc-price-mob.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100vw;
 
   @media screen and (min-width: 768px) {
-    padding-top: 75px;
-    padding-bottom: 80px;
-
-    background-image: url(../images/price/bgc-price-tablet.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100vw;
+    padding-top: 38px;
+    padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 .price__title {
