@@ -1,6 +1,9 @@
 .aboutus {
   padding-top: 20px;
   padding-bottom: 18px;
+  // background-image: url('../images/program/circles-bg.png');
+  // background-position: center;
+  // background-size: contain;
   @media screen and (min-width: 768px) {
     padding-bottom: 29px;
     padding-top: 36px;
@@ -12,15 +15,14 @@
 }
 .aboutus__container {
   display: block;
-  background-image: url('../images/program/circles-bg.png');
-  background-position: center;
-  background-size: contain;
+  // background-image: url('../images/program/circles-bg.png');
+  // background-position: center;
+  // background-size: contain;
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
-// .aboutus_wrapper {
-// }
+
 .aboutus__title {
   margin-bottom: 8px;
   font-family: 'Montserrat Alternates', sans-serif;
