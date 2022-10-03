@@ -136,7 +136,7 @@
   overflow: hidden;
   /* фоновый цвет */
   background: #e0e0e0;
-  z-index: 1001;
+  // z-index: 900;
 }
 
 .preloader__image {
@@ -148,7 +148,7 @@
   margin-top: -35px;
   margin-left: -35px;
   text-align: center;
-  animation: preloader-rotate 10s infinite linear;
+  animation: preloader-rotate 5s infinite linear;
 }
 
 @keyframes preloader-rotate {
@@ -164,4 +164,15 @@
 
 .loaded .preloader {
   display: none;
+}
+
+.preloader-text {
+  position: relative;
+  top: 40%;
+  left: 40%;
+  width: 30px;
+  height: 30px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
 }
