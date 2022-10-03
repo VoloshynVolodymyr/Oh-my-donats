@@ -106,6 +106,7 @@
   display: flex;
   justify-content: space-between;
   height: 309px;
+  justify-content: center;
   @media screen and (min-width: 768px) {
     width: 337px;
     height: 403px;
@@ -119,6 +120,10 @@
 .program__wrap-s {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
 }
 
 .program__wrapper-t {
@@ -158,10 +163,12 @@
 
 .program__wrapper {
   position: relative;
+  flex-shrink: 0;
 }
 
 .program__img {
   display: block;
+  max-width: none;
   width: 130px;
   height: 130px;
 
