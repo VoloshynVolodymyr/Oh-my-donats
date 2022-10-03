@@ -1,153 +1,152 @@
 .container__registration {
-@media screen and (min-width: 768px) {
-        height: 312px;
-    }
+  @media screen and (min-width: 768px) {
+    height: 312px;
+  }
 }
 
 .section__title {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 
-    text-align: center;
-    font-family: $montserrat;
-    font-weight: 600;
-    font-size: 28px;
-    line-height: 1.2;
-    letter-spacing: -0.03em;
+  text-align: center;
+  font-family: $montserrat;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
 
-    color: $text-color;
+  color: $text-color;
 }
 
 .registration__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 
+  min-height: 394px;
+  min-width: 280px;
 
+  color: white;
+  background-image: linear-gradient(
+      to right,
+      rgba(61, 44, 44, 0.6) 100%,
+      rgba(61, 44, 44, 0.6) 100%
+    ),
+    url(../images/Registration/registration-mob-min.png);
 
-    min-height: 394px;
-    min-width: 280px;
-    margin: 27px 20px 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-    color: white;
-    background-image:linear-gradient(to right,
-            rgba(61, 44, 44, 0.6) 100%,
-            rgba(61, 44, 44, 0.6) 100%), url(../images/Registration/registration-mob-min.png);
+  border-radius: 10px;
+  position: relative;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    // opacity: 0.6;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  &:first-child::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 1px;
+    height: 22px;
+    background-color: currentColor;
+  }
 
-    border-radius: 10px;
-    position: relative;
-
-    box-shadow: 0px 4px 4px 0px rgba(0,0,0, 0.25);
-
-@media screen and (min-width: 767px){
-  
-                   
-    }
-
-    &:first-child::after {
-            content: "";
-            display: block;
-            position: absolute;
-            top: 0;
-            left: -10px;
-            width: 1px;
-            height: 22px;
-            background-color:currentColor;
-        }
-    
-    @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-        background-image:
-            url(../images/Registration/registration-mob@2x-min.png);
+    background-image: linear-gradient(
+        to right,
+        rgba(61, 44, 44, 0.6) 100%,
+        rgba(61, 44, 44, 0.6) 100%
+      ),
+      url(../images/Registration/registration-mob@2x-min.png);
+  }
 
+  @media screen and (min-width: 768px) {
+    height: 246px;
+
+    align-items: center;
+
+    background-color: #f6f7f7;
+    background-image: linear-gradient(
+        to right,
+        rgba(61, 44, 44, 0.6) 100%,
+        rgba(61, 44, 44, 0.6) 100%
+      ),
+      url(../images/Registration/registration-tablet-min.png);
+    background-size: cover;
+    opacity: 1;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(61, 44, 44, 0.6) 100%,
+          rgba(61, 44, 44, 0.6) 100%
+        ),
+        url(../images/Registration/registration-tablet@2x-min.png);
     }
+  }
 
-    @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
+    align-items: center;
 
-       
+    background-color: #f6f7f7;
+    background-image: linear-gradient(
+        to right,
+        rgba(61, 44, 44, 0.6) 100%,
+        rgba(61, 44, 44, 0.6) 100%
+      ),
+      url(../images/Registration/registration-desktop-min.png);
+    background-size: cover;
 
-        align-items: center;
+    height: 246px;
 
-        background-color: #F6F7F7;
-        background-image: url(../images/Registration/registration-tablet-min.png);
-        background-size: cover;
-        opacity: 1;
-
-        height: 246px;
-
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image:
-                url(../images/Registration/registration-tablet@2x-min.png);
-
-        }
-
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(61, 44, 44, 0.6) 100%,
+          rgba(61, 44, 44, 0.6) 100%
+        ),
+        url(../images/Registration/registration-desktop@2x-min.png);
     }
-
-    @media screen and (min-width: 1200px) {
-        align-items: center;
-
-        background-color: #F6F7F7;
-        background-image: url(../images/Registration/registration-desktop-min.png);
-        background-size: cover;
-        opacity: 1;
-
-        height: 246px;
-
-
-        @media screen and (min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
-            background-image:
-                url(../images/Registration/registration-desktop@2x-min.png);
-
-        }
-    }
+  }
 }
 
 .registration__form:first-child {
-    align-self: center;
+  align-self: center;
 }
 
-// transform: rotate(90deg);
-
-.registration__input:active{
-    outline: none;
+.registration__input:active {
+  outline: none;
 }
-
 
 .registration__input {
-        background: transparent;
-    border: none;
-    border-bottom: 1px solid white;
-    color: white;
-    z-index: 10;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  z-index: 10;
 }
 
-.registration__input:valid{
-
-    border-color: $accent-color;
+.registration__input:valid {
+  border-color: $accent-color;
 }
-.registration__input:invalid{
-
-    border-color: red;
+.registration__input:invalid {
+  border-color: red;
 }
-.registration__input:valid{
-
-    border-color: $accent-color;
+.registration__input:valid {
+  border-color: $accent-color;
 }
 
 ::placeholder {
-    color: white;
+  color: white;
 }
 
 .conteiner__registration {
-    background-color: inherit;
-border-radius: 10px;
+  background-color: inherit;
+  border-radius: 10px;
 }

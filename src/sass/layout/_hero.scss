@@ -1,14 +1,19 @@
 .hero {
   background-image: url('./../images/header-hero/hero-background__mobile.png');
-  background-position: top;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 312px;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    background-size: 480px;
+  }
   @media screen and (min-width: 768px) {
+    background-size: contain;
     background-image: url('./../images/header-hero/hero-background.jpg');
     height: 345px;
   }
   @media screen and (min-width: 1280px) {
+    background-size: contain;
     height: 556px;
   }
 }
