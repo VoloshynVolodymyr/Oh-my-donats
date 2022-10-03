@@ -192,3 +192,16 @@
 
   position: absolute;
 }
+
+.btn {
+  &:hover,
+  &:focus {
+    transform: translateY(-7px);
+  }
+}
+
+.btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
