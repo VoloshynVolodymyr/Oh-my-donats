@@ -14,6 +14,7 @@ body {
   font-family: "Montserrat", sans-serif;
   position: relative;
   background-image: linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+  cursor: url("/src/images/donut-mause.png"), pointer;
 }
 
 section {
@@ -82,7 +83,7 @@ li {
   box-shadow: 10px 15px 25px rgba(232, 183, 183, 0.45);
   border: none;
   border-radius: 25px;
-  cursor: pointer;
+  cursor: url("/src/images/donut-mause.png"), pointer;
   transition: background-color, 250ms, easy;
 }
 .button:hover, .button:focus {
@@ -138,7 +139,7 @@ li {
 }
 
 .header__icon-burger {
-  cursor: pointer;
+  cursor: url("/src/images/donut-mause.png"), pointer;
 }
 
 .site-nav__list {
@@ -152,7 +153,7 @@ li {
 }
 
 .site-nav__item {
-  cursor: pointer;
+  cursor: url("/src/images/donut-mause.png"), pointer;
   transition: color 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 .site-nav__item:not(:first-child) {
@@ -428,8 +429,6 @@ li {
 
 .aboutus__img {
   display: block;
-  width: 280px;
-  height: 285px;
 }
 @media screen and (max-width: 767px) {
   .aboutus__img {
@@ -605,6 +604,7 @@ li {
   display: flex;
   justify-content: space-between;
   height: 309px;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   .program__wrap-cont {
@@ -623,6 +623,12 @@ li {
 .program__wrap-s {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .program__wrap-s {
+    margin-right: 32px;
+  }
 }
 
 .program__wrapper-t {
@@ -655,10 +661,12 @@ li {
 
 .program__wrapper {
   position: relative;
+  flex-shrink: 0;
 }
 
 .program__img {
   display: block;
+  max-width: none;
   width: 130px;
   height: 130px;
 }
@@ -1056,6 +1064,25 @@ li {
   position: absolute;
 }
 
+.reviews {
+  padding-bottom: 100px;
+}
+@media screen and (min-width: 320px) {
+  .reviews {
+    background-image: url("../images/mobile-background.png");
+  }
+}
+@media screen and (min-width: 768px) {
+  .reviews {
+    background-image: url("../images/tablet-background.png");
+  }
+}
+@media screen and (min-width: 1280px) {
+  .reviews {
+    background-image: url("../images/background.png");
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .reviews__container {
     width: 1033px;
@@ -1085,6 +1112,7 @@ li {
   display: flex;
   width: 100%;
   height: 100%;
+  cursor: url("/src/images/donut-mause.png"), pointer;
 }
 
 .swiper__slide {
@@ -1158,7 +1186,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 8px;
-  cursor: pointer;
+  cursor: url("/src/images/donut-mause.png"), pointer;
   fill: #edd501;
 }
 
@@ -1197,7 +1225,7 @@ li {
   margin-top: 32px;
   font-size: 14;
   line-height: 1.21;
-  color: #f3848c;
+  color: black;
 }
 .swiper__pagination::before, .swiper__pagination::after {
   content: "";
@@ -1227,6 +1255,45 @@ li {
 .swiper-button-prev {
   width: 50px;
   height: 50px;
+}
+
+.top-image {
+  width: 150px;
+  height: 150px;
+}
+
+.bottom-top {
+  position: fixed;
+  z-index: 999;
+  bottom: 70px;
+  right: 15px;
+  cursor: url("/src/images/donut-mause.png"), pointer;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
+.bottom-top_hide {
+  display: none;
+  opacity: 0;
+}
+
+.bottom-top_hiding {
+  opacity: 0;
+}
+
+.text-top {
+  font-size: 25px;
+  color: #f3848c;
+  font-weight: 800;
+}
+.text-top:hover, .text-top:focus {
+  color: yellow;
+}
+
+@media screen and (min-width: 768px) {
+  .container__registration {
+    height: 312px;
+  }
 }
 
 .section__title {
@@ -1305,12 +1372,28 @@ li {
   align-self: center;
 }
 
+.registration__input:active {
+  outline: none;
+}
+
 .registration__input {
   background: transparent;
   border: none;
   border-bottom: 1px solid white;
   color: white;
   z-index: 10;
+}
+
+.registration__input:valid {
+  border-color: #f3848c;
+}
+
+.registration__input:invalid {
+  border-color: red;
+}
+
+.registration__input:valid {
+  border-color: #f3848c;
 }
 
 ::-moz-placeholder {
@@ -1328,4 +1411,57 @@ li {
 .conteiner__registration {
   background-color: inherit;
   border-radius: 10px;
+}
+
+.container__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .container__contact {
+    height: 289px;
+    width: 394px;
+  }
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 268px;
+  background-image: url(../images/Registration/Decor-contacts-mob.svg);
+}
+
+.contact-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.contact-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  z-index: 10;
+  width: 100%;
+}
+
+.social-media__link:not(:last-child) {
+  margin-right: 16px;
+}
+
+.social-media__icon {
+  fill: #3c322d;
+}
+.social-media__icon:hover, .social-media__icon:focus {
+  fill: #f3848c;
+}
+.social-media__icon:active {
+  fill: #f3848c;
 }/*# sourceMappingURL=index.css.map */
