@@ -13,8 +13,21 @@ ul {
 body {
   font-family: "Montserrat", sans-serif;
   position: relative;
-  background-image: linear-gradient(180.11deg, #e5e2e3 10.73%, #fdfefe 38.02%, #e5e2e3 71.11%, #fdfefe 99.91%);
+  background-image: url(/src/images/background-mobile.png), linear-gradient(180.11deg, #E5E2E3 10.73%, #FDFEFE 38.02%, #E5E2E3 71.11%, #FDFEFE 99.91%);
+  background-repeat: no-repeat;
+  background-size: cover;
   cursor: url("/src/images/donut-mause.png"), pointer;
+  scroll-behavior: smooth;
+}
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(/src/images/background-tablet.png), linear-gradient(180.11deg, #E5E2E3 10.73%, #FDFEFE 38.02%, #E5E2E3 71.11%, #FDFEFE 99.91%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    background-image: url(/src/images/background-mobile.png), linear-gradient(180.11deg, #E5E2E3 10.73%, #FDFEFE 38.02%, #E5E2E3 71.11%, #FDFEFE 99.91%);
+  }
 }
 
 section {
@@ -46,7 +59,7 @@ li {
 }
 
 .container {
-  max-width: 320px;
+  max-width: 480px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -179,11 +192,20 @@ li {
   z-index: 50;
   top: 0;
   left: 0;
-  transform: translateY(-200%);
+  visibility: hidden;
   width: 100%;
   height: 100vh;
+  background-image: url("./../images/header-hero/modal-window__bulbs-mobile.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #e5e2e3;
-  transition: transform 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: visibility 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .modal-window {
+    background-image: url("./../images/header-hero/modal-window__bulbs-tablet.png");
+  }
 }
 
 .modal-window__header {
@@ -248,24 +270,31 @@ li {
 }
 
 .is-open {
-  transform: translateY(0);
+  visibility: visible;
 }
 
 .hero {
   background-image: url("./../images/header-hero/hero-background__mobile.png");
-  background-position: top;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 312px;
 }
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  .hero {
+    background-size: 480px;
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
+    background-size: contain;
     background-image: url("./../images/header-hero/hero-background.jpg");
     height: 345px;
   }
 }
 @media screen and (min-width: 1280px) {
   .hero {
+    background-size: contain;
     height: 556px;
   }
 }
@@ -298,6 +327,8 @@ li {
   line-height: 1.2;
   letter-spacing: -0.03em;
   color: #3c322d;
+  -webkit-animation: float 0.7s ease-in-out;
+          animation: float 0.7s ease-in-out;
 }
 @media screen and (min-width: 768px) {
   .hero__title {
@@ -316,6 +347,57 @@ li {
   }
 }
 
+@-webkit-keyframes float {
+  0%, 100% {
+    transform: none;
+  }
+  33% {
+    transform: translateY(-1px) rotate(-2deg);
+  }
+  66% {
+    transform: translateY(1px) rotate(2deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: none;
+  }
+  33% {
+    transform: translateY(-1px) rotate(-2deg);
+  }
+  66% {
+    transform: translateY(1px) rotate(2deg);
+  }
+}
+.logo-company:hover {
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: rotateX(20deg) translateY(2px) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(3deg) scale(1.1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: rotateX(20deg) translateY(2px) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(3deg) scale(1.1);
+  }
+}
 .hero__subtitle {
   margin-bottom: 28px;
   font-family: "Montserrat Alternates", sans-serif;
@@ -365,18 +447,17 @@ li {
 
 .aboutus {
   padding-top: 20px;
-  padding-bottom: 18px;
 }
 @media screen and (min-width: 768px) {
   .aboutus {
-    padding-bottom: 29px;
     padding-top: 36px;
+    padding-bottom: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
   .aboutus {
-    padding-bottom: 17px;
-    padding-top: 43px;
+    padding-top: 64px;
+    padding-bottom: 50px;
   }
 }
 
@@ -476,7 +557,20 @@ li {
 }
 
 .program {
-  padding-top: 10px;
+  padding-top: 14px;
+  padding-bottom: 17px;
+}
+@media screen and (min-width: 768px) {
+  .program {
+    padding-top: 40px;
+    padding-bottom: 22px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .program {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -652,6 +746,22 @@ li {
   }
 }
 
+.program__wrapper:hover {
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: rotateX(20deg) translateY(2px) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(3deg) scale(1.1);
+  }
+}
 .program__wrapper {
   position: relative;
   flex-shrink: 0;
@@ -747,7 +857,6 @@ li {
 
 .program__button {
   padding: 0;
-  margin-bottom: 24px;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
@@ -765,16 +874,19 @@ li {
 }
 
 .speakers {
-  padding-top: 34px;
+  padding-top: 17px;
+  padding-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .speakers {
-    padding-top: 44px;
+    padding-top: 22px;
+    padding-bottom: 38px;
   }
 }
 @media screen and (min-width: 1280px) {
   .speakers {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -782,6 +894,13 @@ li {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+@media screen and (max-width: 767px) {
+  .speakers__list {
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 @media screen and (min-width: 768px) {
   .speakers__list {
@@ -796,6 +915,22 @@ li {
   }
 }
 
+.speakers__item:hover {
+  -webkit-animation: bounce 0.6s;
+          animation: bounce 0.6s;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(0);
+  }
+  25% {
+    transform: rotateX(20deg) translateY(2px) rotate(-3deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(3deg) scale(1.1);
+  }
+}
 .speakers__item {
   flex-basis: calc((100% - 20px) / 2);
 }
@@ -863,19 +998,19 @@ li {
 }
 
 .price {
-  padding-top: 39px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .price {
-    padding-top: 75px;
-    padding-bottom: 80px;
+    padding-top: 38px;
+    padding-bottom: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
   .price {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -1019,6 +1154,7 @@ li {
   line-height: 1.22;
   color: #2e2520;
   padding-left: 38px;
+  text-align: start;
 }
 @media screen and (min-width: 768px) {
   .price__item p {
@@ -1058,21 +1194,19 @@ li {
 }
 
 .reviews {
-  padding-bottom: 100px;
-}
-@media screen and (min-width: 320px) {
-  .reviews {
-    background-image: url("../images/mobile-background.png");
-  }
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
   .reviews {
-    background-image: url("../images/tablet-background.png");
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
   .reviews {
-    background-image: url("../images/background.png");
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -1181,6 +1315,7 @@ li {
   margin-bottom: 8px;
   cursor: url("/src/images/donut-mause.png"), pointer;
   fill: #edd501;
+  scroll-behavior: smooth;
 }
 
 .swiper__name {
@@ -1251,8 +1386,20 @@ li {
 }
 
 .top-image {
-  width: 150px;
-  height: 150px;
+  width: 70px;
+  height: 70px;
+}
+@media screen and (min-width: 768px) {
+  .top-image {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .top-image {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .bottom-top {
@@ -1263,6 +1410,7 @@ li {
   cursor: url("/src/images/donut-mause.png"), pointer;
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
+  scroll-behavior: smooth;
 }
 
 .bottom-top_hide {
@@ -1306,7 +1454,6 @@ li {
   justify-content: space-evenly;
   min-height: 394px;
   min-width: 280px;
-  margin: 27px 20px 40px;
   color: white;
   background-image: linear-gradient(to right, rgba(61, 44, 44, 0.6) 100%, rgba(61, 44, 44, 0.6) 100%), url(../images/Registration/registration-mob-min.png);
   background-repeat: no-repeat;
@@ -1327,37 +1474,36 @@ li {
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .registration__form {
-    background-image: url(../images/Registration/registration-mob@2x-min.png);
+    background-image: linear-gradient(to right, rgba(61, 44, 44, 0.6) 100%, rgba(61, 44, 44, 0.6) 100%), url(../images/Registration/registration-mob@2x-min.png);
   }
 }
 @media screen and (min-width: 768px) {
   .registration__form {
+    height: 246px;
     align-items: center;
-    background-color: #F6F7F7;
-    background-image: url(../images/Registration/registration-tablet-min.png);
+    background-color: #f6f7f7;
+    background-image: linear-gradient(to right, rgba(61, 44, 44, 0.6) 100%, rgba(61, 44, 44, 0.6) 100%), url(../images/Registration/registration-tablet-min.png);
     background-size: cover;
     opacity: 1;
-    height: 246px;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .registration__form {
-    background-image: url(../images/Registration/registration-tablet@2x-min.png);
+    background-image: linear-gradient(to right, rgba(61, 44, 44, 0.6) 100%, rgba(61, 44, 44, 0.6) 100%), url(../images/Registration/registration-tablet@2x-min.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .registration__form {
     align-items: center;
-    background-color: #F6F7F7;
-    background-image: url(../images/Registration/registration-desktop-min.png);
+    background-color: #f6f7f7;
+    background-image: linear-gradient(to right, rgba(61, 44, 44, 0.6) 100%, rgba(61, 44, 44, 0.6) 100%), url(../images/Registration/registration-desktop-min.png);
     background-size: cover;
-    opacity: 1;
     height: 246px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .registration__form {
-    background-image: url(../images/Registration/registration-desktop@2x-min.png);
+    background-image: linear-gradient(to right, rgba(61, 44, 44, 0.6) 100%, rgba(61, 44, 44, 0.6) 100%), url(../images/Registration/registration-desktop@2x-min.png);
   }
 }
 
