@@ -13,12 +13,12 @@ ul {
 body {
   font-family: 'Montserrat', sans-serif;
   position: relative;
-  background-image: url(/src/images/background-mobile.png);
+  background-image: url(/src/images/background-mobile.png), linear-gradient(180.11deg, #E5E2E3 10.73%, #FDFEFE 38.02%, #E5E2E3 71.11%, #FDFEFE 99.91%);
   @media screen and (min-width: 768px) {
-    background-image: url(/src/images/background-tablet.png);
+    background-image: url(/src/images/background-tablet.png), linear-gradient(180.11deg, #E5E2E3 10.73%, #FDFEFE 38.02%, #E5E2E3 71.11%, #FDFEFE 99.91%);
   }
   @media screen and (min-width: 1280px) {
-    background-image: url(/src/images/background-mobile.png); 
+    background-image: url(/src/images/background-mobile.png), linear-gradient(180.11deg, #E5E2E3 10.73%, #FDFEFE 38.02%, #E5E2E3 71.11%, #FDFEFE 99.91%); 
   }
   
   background-repeat: no-repeat; 
