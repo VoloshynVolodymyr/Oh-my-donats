@@ -1,21 +1,14 @@
 .speakers {
-  padding-top: 34px;
-
-  background-image: url(../images/speakers/bgc-speakers-desk.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  padding-top: 17px;
+  padding-bottom: 20px;
   @media screen and (min-width: 768px) {
-    padding-top: 44px;
+    padding-top: 22px;
+    padding-bottom: 38px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 100px;
-
-    background-image: url(../images/speakers/bgc-speakers-desk.png);
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: contain;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 .speakers__list {

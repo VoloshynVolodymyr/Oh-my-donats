@@ -1,17 +1,15 @@
-.reviews__container {
-  padding-bottom: 90px;
-
-  @media screen and (min-width: 320px) {
-    background-image: url('../images/mobile-background.png');
-    padding-bottom: 47px;
-  }
+.reviews {
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @media screen and (min-width: 768px) {
-    background-image: url('../images/tablet-background.png');
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1280px) {
-    background-image: url('../images/background.png');
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 
