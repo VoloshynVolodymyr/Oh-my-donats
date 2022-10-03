@@ -9,6 +9,20 @@
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
 
+    if (!isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+      const mobileMenu = document.querySelector('.js-menu-container');
+      const clickLink = document.querySelectorAll('.modal-nav__link');
+      clickLink.forEach(el => {
+        el.addEventListener('click', () => {
+          mobileMenu.classList.remove('is-open');
+          document.body.style.overflow = 'visible';
+        });
+      });
+    } else {
+      document.body.style.overflow = 'visible';
+    }
+
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
