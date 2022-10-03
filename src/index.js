@@ -40,7 +40,7 @@ const btnUp = {
       this.el.classList.add('bottom-top_hiding');
       window.setTimeout(() => {
         this.el.classList.remove('bottom-top_hiding');
-      }, 300);
+      }, 400);
     }
   },
   hide() {
@@ -52,7 +52,7 @@ const btnUp = {
       window.setTimeout(() => {
         this.el.classList.add('bottom-top_hide');
         this.el.classList.remove('bottom-top_hiding');
-      }, 300);
+      }, 400);
     }
   },
   addEventListener() {
@@ -63,16 +63,16 @@ const btnUp = {
         return;
       }
       this.scrolling = false;
-      // если пользователь прокрутил страницу более чем на 200px
+      // если пользователь прокрутил страницу более чем на 400px
       if (scrollY > 400) {
-        // сделаем кнопку .btn-up видимой
+        // сделаем кнопку .bottom-top видимой
         this.show();
       } else {
-        // иначе скроем кнопку .btn-up
+        // иначе скроем кнопку .bottom-top
         this.hide();
       }
     });
-    // при нажатии на кнопку .btn-up
+    // при нажатии на кнопку .bottom-top
     document.querySelector('.bottom-top').onclick = () => {
       this.scrolling = true;
       this.hide();
