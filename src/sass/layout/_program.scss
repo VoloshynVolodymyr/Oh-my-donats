@@ -132,6 +132,14 @@
   @media screen and (min-width: 768px) {
     margin-right: 32px;
   }
+  @media screen and (min-width: 1280px) {
+    margin-right: 0px;
+  }
+}
+.program__wrap-s-l {
+  @media screen and (min-width: 1280px) {
+    margin-right: 130px;
+  }
 }
 
 .program__wrapper-t {

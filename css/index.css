@@ -717,6 +717,17 @@ li {
     margin-right: 32px;
   }
 }
+@media screen and (min-width: 1280px) {
+  .program__wrap-s {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .program__wrap-s-l {
+    margin-right: 130px;
+  }
+}
 
 .program__wrapper-t {
   margin-bottom: 28px;
