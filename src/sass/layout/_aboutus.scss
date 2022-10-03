@@ -1,6 +1,6 @@
 .aboutus {
   padding-top: 20px;
-  padding-bottom: 14px;
+
   @media screen and (min-width: 768px) {
     padding-top: 36px;
     padding-bottom: 40px;
@@ -12,12 +12,12 @@
 }
 .aboutus__container {
   display: block;
+
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
-// .aboutus_wrapper {
-// }
+
 .aboutus__title {
   margin-bottom: 8px;
   font-family: 'Montserrat Alternates', sans-serif;
