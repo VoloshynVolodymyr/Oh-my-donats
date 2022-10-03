@@ -1,15 +1,15 @@
 .price {
-  padding-top: 39px;
+  padding-top: 20px;
   padding-bottom: 20px;
 
   @media screen and (min-width: 768px) {
-    padding-top: 75px;
-    padding-bottom: 80px;
+    padding-top: 38px;
+    padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1280px) {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
 .price__title {
@@ -31,7 +31,6 @@
     margin-bottom: 27px;
   }
 }
-
 .price__card {
   display: flex;
   flex-direction: column;
@@ -155,6 +154,8 @@
   color: $paragraph-text-color;
 
   padding-left: 38px;
+
+  text-align: start;
 
   @media screen and (min-width: 768px) {
     font-size: 15px;

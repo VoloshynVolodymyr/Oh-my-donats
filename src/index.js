@@ -9,6 +9,20 @@
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
 
+    if (!isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+      const mobileMenu = document.querySelector('.js-menu-container');
+      const clickLink = document.querySelectorAll('.modal-nav__link');
+      clickLink.forEach(el => {
+        el.addEventListener('click', () => {
+          mobileMenu.classList.remove('is-open');
+          document.body.style.overflow = 'visible';
+        });
+      });
+    } else {
+      document.body.style.overflow = 'visible';
+    }
+
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
       : 'enableBodyScroll';
@@ -32,21 +46,27 @@ const btnUp = {
   el: document.querySelector('.bottom-top'),
   scrolling: false,
   show() {
-    if (this.el.classList.contains('bottom-top_hide') && !this.el.classList.contains('btn-up_hiding')) {
+    if (
+      this.el.classList.contains('bottom-top_hide') &&
+      !this.el.classList.contains('btn-up_hiding')
+    ) {
       this.el.classList.remove('bottom-top_hide');
       this.el.classList.add('bottom-top_hiding');
       window.setTimeout(() => {
         this.el.classList.remove('bottom-top_hiding');
-      }, 300);
+      }, 400);
     }
   },
   hide() {
-    if (!this.el.classList.contains('bottom-top_hide') && !this.el.classList.contains('btn-up_hiding')) {
+    if (
+      !this.el.classList.contains('bottom-top_hide') &&
+      !this.el.classList.contains('btn-up_hiding')
+    ) {
       this.el.classList.add('bottom-top_hiding');
       window.setTimeout(() => {
         this.el.classList.add('bottom-top_hide');
         this.el.classList.remove('bottom-top_hiding');
-      }, 300);
+      }, 400);
     }
   },
   addEventListener() {
@@ -57,16 +77,16 @@ const btnUp = {
         return;
       }
       this.scrolling = false;
-      // если пользователь прокрутил страницу более чем на 200px
+      // если пользователь прокрутил страницу более чем на 400px
       if (scrollY > 400) {
-        // сделаем кнопку .btn-up видимой
+        // сделаем кнопку .bottom-top видимой
         this.show();
       } else {
-        // иначе скроем кнопку .btn-up
+        // иначе скроем кнопку .bottom-top
         this.hide();
       }
     });
-    // при нажатии на кнопку .btn-up
+    // при нажатии на кнопку .bottom-top
     document.querySelector('.bottom-top').onclick = () => {
       this.scrolling = true;
       this.hide();
@@ -74,11 +94,10 @@ const btnUp = {
       window.scrollTo({
         top: 0,
         left: 0,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
-    }
-  }
-}
+    };
+  },
+};
 
 btnUp.addEventListener();
-
