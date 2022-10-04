@@ -1,32 +1,77 @@
-.container__contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.contact {
+  padding-bottom: 20px;
+  padding-top: 20px;
 
   @media screen and (min-width: 768px) {
-    height: 289px;
-    width: 394px;
+    padding-top: 34px;
+    padding-bottom: 40px;
   }
 }
 
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-
-  height: 268px;
-
-  background-image: url(../images/Registration/Decor-contacts-mob.svg);
-}
-
-.contact-text {
+.container__contact {
+  display: block;
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+
+  .social-media__link {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
+  .social-media__icon {
+    fill: $text-color;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+    }
+
+    &:active {
+      fill: $accent-color;
+    }
+  }
+}
+
+.contact__title {
+  margin-bottom: 27px;
+}
+.contact-text {
+  margin-bottom: 27px;
+}
+.contact-form label:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  width: 100%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  background-image: url(../images/Registration/Decor-contacts-mob.svg);
+
+  & button {
+    margin-top: 28px;
+    margin-bottom: 28px;
+  }
 }
 
 .contact-input {
@@ -34,25 +79,9 @@
   border: none;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
   color: rgba(0, 0, 0, 1);
-  z-index: 10;
+  // z-index: 10;
   width: 100%;
 }
-
-.social-media__link {
-  &:not(:last-child) {
-    margin-right: 16px;
-  }
-}
-
-.social-media__icon {
-  fill: $text-color;
-
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
-
-  &:active {
-    fill: $accent-color;
-  }
+.contact-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
 }
