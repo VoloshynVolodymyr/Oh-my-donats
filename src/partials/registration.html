@@ -18,10 +18,11 @@
       <label>
         <input
           class="registration__input"
-          type="name"
-          name="email"
-          placeholder="Your name"
+          type="text"
+          name="name"
+          placeholder="Name"
           required
+          pattern="[A-Za-z0-9 ]{3,}"
         />
       </label>
 
@@ -30,8 +31,9 @@
           class="registration__input"
           type="tel"
           name="phone"
-          placeholder="Phone number"
+          placeholder="Phone number (10 digitas)"
           required
+          pattern="[0-9]{10}"
         />
       </label>
       <label>

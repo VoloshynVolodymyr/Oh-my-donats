@@ -37,11 +37,20 @@
   }
 }
 
-.footer a {
+.footer li {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.2;
   color: $paragraph-text-color;
   align-items: center;
   display: flex;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+
+  &:active {
+    fill: $accent-color;
+  }
 }
