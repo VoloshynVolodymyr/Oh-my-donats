@@ -691,6 +691,9 @@ li {
     display: flex;
   }
 }
+.program__box {
+  padding-bottom: 24px;
+}
 @media screen and (min-width: 768px) {
   .program__box {
     width: 329px;

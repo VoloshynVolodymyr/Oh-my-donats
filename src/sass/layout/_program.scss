@@ -22,6 +22,7 @@
 }
 
 .program__box {
+  padding-bottom: 24px;
   @media screen and (min-width: 768px) {
     width: 329px;
     margin-right: 39px;
@@ -111,6 +112,8 @@
   }
 }
 .program__wrap-cont {
+  // justify-content: space-evenly;
+
   display: flex;
   justify-content: space-between;
   height: 309px;
