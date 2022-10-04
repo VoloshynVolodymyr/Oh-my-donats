@@ -412,8 +412,6 @@ li {
 
 .aboutus__text {
   line-height: 1.25;
-}
-.aboutus__text:not(:last-of-type) {
   margin-bottom: 20px;
 }
 @media screen and (min-width: 768px) {
@@ -457,8 +455,9 @@ li {
 .visually-hidden {
   display: none;
 }
+
 @media screen and (min-width: 1280px) {
-  .visually-hidden {
+  .hidden {
     display: block;
   }
 }
@@ -482,7 +481,7 @@ li {
 }
 
 .program {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .program__container {
@@ -767,6 +766,10 @@ li {
 
 .speakers {
   padding-top: 34px;
+  background-image: url(../images/speakers/bgc-speakers-desk.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 @media screen and (min-width: 768px) {
   .speakers {
@@ -776,6 +779,10 @@ li {
 @media screen and (min-width: 1280px) {
   .speakers {
     padding-top: 100px;
+    background-image: url(../images/speakers/bgc-speakers-desk.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
   }
 }
 
@@ -866,11 +873,19 @@ li {
 .price {
   padding-top: 39px;
   padding-bottom: 20px;
+  background-image: url(../images/price/bgc-price-mob.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
 }
 @media screen and (min-width: 768px) {
   .price {
     padding-top: 75px;
     padding-bottom: 80px;
+    background-image: url(../images/price/bgc-price-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -921,7 +936,7 @@ li {
   background-repeat: no-repeat;
   background-position: center 74%;
 }
-@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .price__items:not(:first-child) {
     background-image: url(../images/price/bgc-mob@2x-min.png);
   }
@@ -937,7 +952,7 @@ li {
     background-size: 200px 145px;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .price__items {
     background-image: url(../images/price/bgc-tab@2x-min.png);
   }
@@ -953,7 +968,7 @@ li {
     background-position: center 74%;
   }
 }
-@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .price__items {
     background-image: url(../images/price/bgc-desk@2x-min.png);
   }
@@ -1020,6 +1035,7 @@ li {
   line-height: 1.22;
   color: #2e2520;
   padding-left: 38px;
+  text-align: start;
 }
 @media screen and (min-width: 768px) {
   .price__item p {
@@ -1058,21 +1074,22 @@ li {
   position: absolute;
 }
 
-.reviews {
-  padding-bottom: 100px;
+.reviews__container {
+  padding-bottom: 90px;
 }
 @media screen and (min-width: 320px) {
-  .reviews {
+  .reviews__container {
     background-image: url("../images/mobile-background.png");
+    padding-bottom: 47px;
   }
 }
 @media screen and (min-width: 768px) {
-  .reviews {
+  .reviews__container {
     background-image: url("../images/tablet-background.png");
   }
 }
 @media screen and (min-width: 1280px) {
-  .reviews {
+  .reviews__container {
     background-image: url("../images/background.png");
   }
 }
@@ -1164,7 +1181,8 @@ li {
 .swiper__image {
   margin-bottom: 8px;
   border-radius: 50%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media screen and (min-width: 768px) {
   .swiper__image {
@@ -1251,8 +1269,20 @@ li {
 }
 
 .top-image {
-  width: 150px;
-  height: 150px;
+  width: 70px;
+  height: 70px;
+}
+@media screen and (min-width: 768px) {
+  .top-image {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .top-image {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .bottom-top {
@@ -1300,69 +1330,119 @@ li {
   color: #3c322d;
 }
 
+.registration-text {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
 .registration__form {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  min-height: 394px;
-  min-width: 280px;
-  margin: 27px 20px 40px;
+  padding: 40px 8px 32px;
+  width: 100%;
   color: white;
-  background-image: linear-gradient(to right, rgba(61, 44, 44, 0.6) 100%, rgba(61, 44, 44, 0.6) 100%), url(../images/Registration/registration-mob-min.png);
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 10px;
   position: relative;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(to right, rgba(61, 44, 44, 0.6) 100%, rgba(61, 44, 44, 0.6) 100%), url(../images/Registration/registration-mob-min.png);
 }
-.registration__form:first-child::after {
+.registration__form button {
+  text-align: center;
+}
+.registration__form > *:not(:last-child) {
+  margin-bottom: 40px;
+}
+.registration__form > *:first-child {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.registration__form > *:first-child::after {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
-  left: -10px;
-  width: 1px;
-  height: 22px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
   background-color: currentColor;
 }
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .registration__form {
-    background-image: url(../images/Registration/registration-mob@2x-min.png);
+    background-image: linear-gradient(to right, rgba(61, 44, 44, 0.6) 100%, rgba(61, 44, 44, 0.6) 100%), url(../images/Registration/registration-mob@2x-min.png);
   }
 }
 @media screen and (min-width: 768px) {
   .registration__form {
-    align-items: center;
-    background-color: #F6F7F7;
-    background-image: url(../images/Registration/registration-tablet-min.png);
-    background-size: cover;
-    opacity: 1;
     height: 246px;
+    min-width: 704px;
+    padding: 0 40px 0 62px;
+    flex-direction: row;
+    align-items: center;
+    background-image: url(../images/Registration/Rectangle13-min.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/Registration/registration-tablet-min.png);
+    background-position: left, right, right;
+    background-repeat: no-repeat;
+    background-size: 563px, 453px, 453px;
+    background-color: #1b1d1d;
+    background-size: auto 100%;
+    opacity: 1;
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .registration__form {
-    background-image: url(../images/Registration/registration-tablet@2x-min.png);
+    background-image: url(../images/Registration/Rectangle13-min.png), linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)), url(../images/Registration/registration-tablet@2x-min.png);
+    background-position: left, right, right;
+    background-repeat: no-repeat;
+    background-size: 563px, 453px, 453px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .registration__form ::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 67px;
+    bottom: 20px;
+    left: 23px;
+    background-image: url(../images/Registration/colorful-and-tasty-donuts-tablet-min);
+  }
+}
+@media screen and (min-width: 768px) {
+  .registration__form > *:first-child {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  .registration__form > *:first-child::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 32;
+    left: 184;
+    width: 1px;
+    height: 154px;
+    background-color: currentColor;
   }
 }
 @media screen and (min-width: 1200px) {
   .registration__form {
     align-items: center;
-    background-color: #F6F7F7;
+    background-color: #f6f7f7;
     background-image: url(../images/Registration/registration-desktop-min.png);
     background-size: cover;
-    opacity: 1;
     height: 246px;
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .registration__form {
     background-image: url(../images/Registration/registration-desktop@2x-min.png);
   }
-}
-
-.registration__form:first-child {
-  align-self: center;
 }
 
 .registration__input:active {
@@ -1375,6 +1455,7 @@ li {
   border-bottom: 1px solid white;
   color: white;
   z-index: 10;
+  width: 100%;
 }
 
 .registration__input:valid {
@@ -1387,6 +1468,14 @@ li {
 
 .registration__input:valid {
   border-color: #f3848c;
+}
+
+::-moz-placeholder {
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
 }
 
 ::placeholder {
@@ -1402,24 +1491,29 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 338px;
 }
-@media screen and (min-width: 768px) {
-  .container__contact {
-    height: 289px;
-    width: 394px;
-  }
+.container__contact button {
+  margin-top: 28px;
 }
 
 .contact-form {
+  padding: 27px 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  height: 268px;
+  width: 100%;
   background-image: url(../images/Registration/Decor-contacts-mob.svg);
 }
-
-p {
+.contact-form label {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact-form button {
+  margin-top: 32px;
+}
+.contact-form .contact-text {
   font-family: Montserrat;
   font-size: 16px;
   font-weight: 400;
@@ -1427,8 +1521,7 @@ p {
   letter-spacing: 0em;
   text-align: center;
 }
-
-.contact-input {
+.contact-form .contact-input {
   background: transparent;
   border: none;
   border-bottom: 1px solid rgb(0, 0, 0);
@@ -1436,17 +1529,57 @@ p {
   z-index: 10;
   width: 100%;
 }
-
-.social-media__link:not(:last-child) {
+.contact-form ::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.contact-form :-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.contact-form ::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.contact-form .social-media__link:not(:last-child) {
   margin-right: 16px;
 }
-
-.social-media__icon {
+.contact-form .social-media__icon {
   fill: #3c322d;
 }
-.social-media__icon:hover, .social-media__icon:focus {
+.contact-form .social-media__icon:hover, .contact-form .social-media__icon:focus {
   fill: #f3848c;
 }
-.social-media__icon:active {
+.contact-form .social-media__icon:active {
   fill: #f3848c;
+}
+
+footer {
+  margin-top: 40px;
+}
+
+.small-donuts-pic {
+  width: 77px;
+  height: 51px;
+  background-image: url(../images/Registration/footer-donuts-mob-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  footer ul {
+    justify-content: space-between;
+    margin: 32px 80px;
+  }
+  footer ul .small-donuts-pic,
+footer ul .footer__icon {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer ul {
+    justify-content: space-between;
+    margin: 100px 16px 101px 32px;
+  }
 }/*# sourceMappingURL=index.css.map */
