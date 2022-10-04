@@ -10,7 +10,7 @@
     background-image: url('./../images/header-hero/hero-background-mobile@2x.png');
   }
   @media screen and (min-width: 480px) and (max-width: 768px) {
-    background-size: 480px;
+    background-size: 100%;
   }
   @media screen and (min-width: 768px) {
     background-size: cover;
