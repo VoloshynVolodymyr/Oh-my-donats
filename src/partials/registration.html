@@ -1,22 +1,27 @@
-<section id="register" class="section">
-  <div class="container container__registration">
-    <h2 class="section__title">Registration</h2>
+
+<section id="register" class="registration">
+  <div class="container registration__container">
+    <h2 class="registration__title">Registration</h2>
     <form
       class="registration__form"
       name="signup_form"
       autocomplete="on"
-      novalidate
-    >
-      <p>
-        23 May, 11:00 <br />
-        New York <time datetime="23-05T11:00"></time>
+      novalidate>
+      
+      <p class="registration__time-date">
+        May 23, 11:00 </br> New York <time datetime="23-05T11:00"></time>
+      </p>
+      <div class="registration__box">
+      <p class="registration__subtitle">
+        Apply your personal info for registration
       </p>
       <label>
         <input
           class="registration__input"
-          type="Name"
+          type="name"
           name="email"
           placeholder="Name"
+          required
         />
       </label>
 
@@ -24,8 +29,9 @@
         <input
           class="registration__input"
           type="tel"
-          name="Phone"
+          name="phone"
           placeholder="Phone number"
+          required
         />
       </label>
       <label>
@@ -34,9 +40,10 @@
           type="email"
           name="email"
           placeholder="Email"
+          required
         />
       </label>
-
+      </div>
       <button class="button" type="submit">Register</button>
     </form>
   </div>
