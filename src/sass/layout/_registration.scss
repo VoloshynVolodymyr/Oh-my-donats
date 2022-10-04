@@ -11,14 +11,18 @@
   }
 
   @media screen and (min-width: 1280px) {
+    padding: 40px 20px;
   }
 }
 
 .registration__box label {
   display: block;
   &:not(:last-child) {
-    margin-bottom: 20px;
-    margin-bottom: 34px;
+    margin-bottom: 22px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
   }
 }
 
@@ -88,6 +92,25 @@
     background-repeat: no-repeat;
     background-size: 100px 66px, 563px 246px, 453px 243px, 453px 243px;
   }
+
+  @media screen and (min-width: 1280px) {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1030px;
+    padding: 40px 20px 40px 20px;
+    background-image: url(../images/Registration/colorful-and-tasty-donuts-desktop-min.png),
+      url(../images/Registration/Rectangle13-min.png),
+      linear-gradient(
+        to right,
+        rgba(61, 44, 44, 0.3) 100%,
+        rgba(61, 44, 44, 0.3) 100%
+      ),
+      url(../images/Registration/registration-desktop-min.png);
+    background-position: 15px 90%, left center, right center, right center;
+    background-repeat: no-repeat;
+    background-size: 200px 133px, 972px 246px, 972px 246px, 453px 246px;
+  }
 }
 
 .registration__time-date {
@@ -105,9 +128,26 @@
     text-align: end;
     margin-bottom: 0px;
     padding: 0;
+
+    border-right: 1px solid $paragraph-text-color;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding-right: 32px;
+    width: 140px;
   }
 
   @media screen and (min-width: 1280px) {
+    border-right: 1px solid $paragraph-text-color;
+    height: 100%;
+
+    padding-right: 28px;
+    width: 160px;
+
+    display: flex;
+    align-items: center;
+    margin-left: 0;
   }
 }
 .registration__box {
@@ -119,6 +159,11 @@
   @media screen and (min-width: 768px) {
     max-width: 235px;
     text-align: start;
+    margin-left: 24px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 28px;
+    margin-right: 45px;
   }
 }
 
@@ -150,9 +195,24 @@
     @media screen and (min-width: 768px) {
       color: rgba(0, 0, 0, 0.5);
     }
+    @media screen and (min-width: 1280px) {
+      color: $paragraph-text-color;
+    }
   }
   @media screen and (min-width: 768px) {
     color: $paragraph-text-color;
     border-bottom: 1px solid $paragraph-text-color;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .registration__form button {
+    margin-left: auto;
+  }
+}
+
+// @media screen and (min-width: 1280px) {
+//   .registration__form button {
+//     margin-right: auto;
+//   }
+// }
