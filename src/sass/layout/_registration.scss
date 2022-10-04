@@ -1,156 +1,3 @@
-// .container__registration {
-//   @media screen and (min-width: 768px) {
-//     height: 312px;
-//   }
-// }
-
-// .section__title {
-//   margin-bottom: 18px;
-
-//   text-align: center;
-//   font-family: $montserrat;
-//   font-weight: 600;
-//   font-size: 28px;
-//   line-height: 1.2;
-//   letter-spacing: -0.03em;
-
-//   color: $text-color;
-// }
-
-// .registration__form {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-evenly;
-
-//   min-height: 394px;
-//   min-width: 280px;
-
-//   color: white;
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(61, 44, 44, 0.6) 100%,
-//       rgba(61, 44, 44, 0.6) 100%
-//     ),
-//     url(../images/Registration/registration-mob-min.png);
-
-//   background-repeat: no-repeat;
-//   background-size: cover;
-
-//   border-radius: 10px;
-//   position: relative;
-
-//   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-//   &:first-child::after {
-//     content: '';
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     left: -10px;
-//     width: 1px;
-//     height: 22px;
-//     background-color: currentColor;
-//   }
-
-//   @media screen and (min-device-pixel-ratio: 2),
-//     screen and (min-resolution: 192dpi),
-//     screen and (min-resolution: 2dppx) {
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(61, 44, 44, 0.6) 100%,
-//         rgba(61, 44, 44, 0.6) 100%
-//       ),
-//       url(../images/Registration/registration-mob@2x-min.png);
-//   }
-
-//   @media screen and (min-width: 768px) {
-//     height: 246px;
-
-//     align-items: center;
-
-//     background-color: #f6f7f7;
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(61, 44, 44, 0.6) 100%,
-//         rgba(61, 44, 44, 0.6) 100%
-//       ),
-//       url(../images/Registration/registration-tablet-min.png);
-//     background-size: cover;
-//     opacity: 1;
-
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: linear-gradient(
-//           to right,
-//           rgba(61, 44, 44, 0.6) 100%,
-//           rgba(61, 44, 44, 0.6) 100%
-//         ),
-//         url(../images/Registration/registration-tablet@2x-min.png);
-//     }
-//   }
-
-//   @media screen and (min-width: 1200px) {
-//     align-items: center;
-
-//     background-color: #f6f7f7;
-//     background-image: linear-gradient(
-//         to right,
-//         rgba(61, 44, 44, 0.6) 100%,
-//         rgba(61, 44, 44, 0.6) 100%
-//       ),
-//       url(../images/Registration/registration-desktop-min.png);
-//     background-size: cover;
-
-//     height: 246px;
-
-//     @media screen and (min-device-pixel-ratio: 2),
-//       screen and (min-resolution: 192dpi),
-//       screen and (min-resolution: 2dppx) {
-//       background-image: linear-gradient(
-//           to right,
-//           rgba(61, 44, 44, 0.6) 100%,
-//           rgba(61, 44, 44, 0.6) 100%
-//         ),
-//         url(../images/Registration/registration-desktop@2x-min.png);
-//     }
-//   }
-// }
-
-// .registration__form:first-child {
-//   align-self: center;
-// }
-
-// .registration__input:active {
-//   outline: none;
-// }
-
-// .registration__input {
-//   background: transparent;
-//   border: none;
-//   border-bottom: 1px solid white;
-//   color: white;
-//   z-index: 10;
-// }
-
-// .registration__input:valid {
-//   border-color: $accent-color;
-// }
-// .registration__input:invalid {
-//   border-color: red;
-// }
-// .registration__input:valid {
-//   border-color: $accent-color;
-// }
-
-// ::placeholder {
-//   color: white;
-// }
-
-// .conteiner__registration {
-//   background-color: inherit;
-//   border-radius: 10px;
-// }
-
 .registration__container {
   display: flex;
   flex-direction: column;
@@ -195,19 +42,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 8px 32px 8px;
+  padding: 40px 10px 32px 10px;
   width: 100%;
-  // background-image:
-  //   url(../images/Registration/Rectangle13-min.png),
-  //   linear-gradient(
-  //     to right,
-  //     rgba(61, 44, 44, 0.3) 100%,
-  //     rgba(61, 44, 44, 0.3) 100%
-  //   ),
-  //   url(../images/Registration/registration-tablet-min.png);
-  // background-position: left center, right center, right center;
-  // background-repeat: no-repeat;
-  // background-size: 563px 246px, 453px 243px, 453px 243px;
 
   background-image: linear-gradient(
       to right,
@@ -221,19 +57,6 @@
 
   border-radius: 10px;
   box-shadow: 10px 15px 25px rgba(210, 201, 201, 0.45);
-  //   position: relative;
-
-  //   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  //   &:first-child::after {
-  //     content: '';
-  //     display: block;
-  //     position: absolute;
-  //     top: 0;
-  //     left: -10px;
-  //     width: 1px;
-  //     height: 22px;
-  //     background-color: currentColor;
-  //   }
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -265,51 +88,6 @@
     background-repeat: no-repeat;
     background-size: 100px 66px, 563px 246px, 453px 243px, 453px 243px;
   }
-
-  // padding: 20px 8px 32px 8px;
-  // border-radius: 10px;
-  // background-position: center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-image: linear-gradient(
-  //     to right,
-  //     rgba(61, 44, 44, 0.6) 100%,
-  //     rgba(61, 44, 44, 0.6) 100%
-  //   ),
-  //   url(../images/Registration/registration-mob-min.png);
-  // @media screen and (min-device-pixel-ratio: 2),
-  //   screen and (min-resolution: 192dpi),
-  //   screen and (min-resolution: 2dppx) {
-  //   background-image: linear-gradient(
-  //       to right,
-  //       rgba(61, 44, 44, 0.6) 100%,
-  //       rgba(61, 44, 44, 0.6) 100%
-  //     ),
-  //     url(../images/Registration/registration-mob@2x-min.png);
-  // }
-  // @media screen and (min-width: 768px) {
-  //   height: 246px;
-  //   min-width: 704px;
-  //   padding: 0 40px 0 62px;
-  //   flex-direction: row;
-  //   align-items: center;
-  //   background-image: url(../images/Registration/Rectangle13-min.png),
-  //     linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
-  //     url(../images/Registration/registration-tablet-min.png);
-  //   background-position: left, right, right;
-  //   background-repeat: no-repeat;
-  //   background-size: 563px, 453px, 453px;
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url(../images/Registration/Rectangle13-min.png),
-  //       linear-gradient(rgba(61, 44, 44, 0.3), rgba(61, 44, 44, 0.3)),
-  //       url(../images/Registration/registration-tablet@2x-min.png);
-  //     background-position: left, right, right;
-  //     background-repeat: no-repeat;
-  //     background-size: 563px, 453px, 453px;
-  //   }
-  // }
 }
 
 .registration__time-date {
@@ -335,6 +113,7 @@
 .registration__box {
   @media screen and (max-width: 767px) {
     margin-bottom: 32px;
+    width: 100%;
   }
 
   @media screen and (min-width: 768px) {
@@ -354,15 +133,9 @@
 
   @media screen and (min-width: 768px) {
     color: $paragraph-text-color;
+    text-align: left;
   }
 }
-
-.registration__subtitle {
-  @media screen and (max-width: 767px) {
-    max-width: 250px;
-  }
-}
-
 .registration__input {
   background: transparent;
   border: none;
