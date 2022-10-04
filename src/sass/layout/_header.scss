@@ -1,8 +1,14 @@
 .header {
   position: absolute;
+  z-index: 50;
   top: 0;
   left: 0;
   width: 100%;
+  transition: background-color 400ms ease-in-out;
+}
+
+.header--lightgrey-color {
+  background-color: $lightgrey-color;
 }
 
 .header__container {
@@ -32,13 +38,58 @@
 }
 
 .js-open-menu {
+  display: block;
+  padding: 2px;
+  cursor: pointer;
   @media screen and (min-width: 1280px) {
     display: none;
   }
 }
 
-.header__icon-burger {
-  cursor: url('/src/images/donut-mause.png'), pointer;
+.site-nav__icon {
+  position: relative;
+  display: inline-block;
+  height: 3px;
+  width: 30px;
+  cursor: pointer;
+  background-color: $text-color;
+  transition: background-color 400ms 100ms ease-in-out;
+  &::before {
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    content: '';
+    display: inline-block;
+    height: 3px;
+    width: 30px;
+    background-color: $text-color;
+    cursor: pointer;
+    transition: transform 400ms ease-in-out;
+  }
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    content: '';
+    display: inline-block;
+    height: 3px;
+    width: 30px;
+    background-color: $text-color;
+    cursor: pointer;
+    transition: transform 400ms ease-in-out;
+  }
+}
+
+.open-mode {
+  background-color: transparent;
+  &::before {
+    transform: translateY(260%) rotate(45deg);
+    // visibility: hidden;
+  }
+  &::after {
+    transform: translateY(-250%) rotate(-45deg);
+    // transform: rotate(90deg);
+  }
 }
 
 .site-nav__list {
@@ -74,4 +125,54 @@
     box-shadow: 0px 7px 27px -2px rgba(253, 88, 140, 0.35);
     color: #fff;
   }
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  /* фоновый цвет */
+  background: #e0e0e0;
+  // z-index: 900;
+}
+
+.preloader__image {
+  position: relative;
+  top: 40%;
+  left: 50%;
+  width: 150px;
+  height: 150px;
+  // margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
+  animation: preloader-rotate 5s infinite linear;
+}
+
+@keyframes preloader-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loaded_hiding .preloader {
+  transition: 10s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+.preloader-text {
+  position: relative;
+  top: 40%;
+  left: 45%;
+  width: 30px;
+  height: 30px;
+  margin-top: -35px;
+  margin-left: -35px;
+  text-align: center;
 }

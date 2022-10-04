@@ -1,26 +1,23 @@
 .aboutus {
   padding-top: 20px;
-  padding-bottom: 18px;
+
   @media screen and (min-width: 768px) {
-    padding-bottom: 29px;
     padding-top: 36px;
+    padding-bottom: 40px;
   }
   @media screen and (min-width: 1280px) {
-    padding-bottom: 17px;
-    padding-top: 43px;
+    padding-top: 64px;
+    padding-bottom: 50px;
   }
 }
 .aboutus__container {
   display: block;
-  background-image: url('../images/program/circles-bg.png');
-  background-position: center;
-  background-size: contain;
+
   @media screen and (min-width: 768px) {
     display: flex;
   }
 }
-// .aboutus_wrapper {
-// }
+
 .aboutus__title {
   margin-bottom: 8px;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -50,8 +47,6 @@
 }
 .aboutus__img {
   display: block;
-  width: 280px;
-  height: 285px;
 
   @media screen and (max-width: 767px) {
     margin-bottom: 28px;
