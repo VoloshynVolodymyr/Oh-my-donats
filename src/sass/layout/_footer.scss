@@ -54,3 +54,13 @@
     fill: $accent-color;
   }
 }
+
+.footer a {
+  color: $paragraph-text-color;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-color;
+    outline: none;
+  }
+}
